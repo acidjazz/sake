@@ -1,0 +1,26 @@
+{
+  "name": "sake",
+  "description": "design sake studios",
+  "main": "index.html",
+  "authors": [
+    "Kevin Olson"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sake",
+    "portfolio",
+    "design"
+  ],
+  "homepage": "https://github.com/acidjazz/sake",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}
