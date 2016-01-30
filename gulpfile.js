@@ -17,6 +17,9 @@ var sourcemaps = require('gulp-sourcemaps');
 var tap = require('gulp-tap');
 var cache = require('gulp-cache');
 var path = require('path');
+var fs = require('fs');
+var cp = require('child_process');
+var gutil = require('gulp-util');
 
 var objectus = require('objectus');
 
@@ -42,9 +45,7 @@ gulp.task('objectus', function() {
 
 gulp.task('vendors', function() {
 
-  gulp.src([
-      'bower_components/jquery/dist/jquery.js'
-  ])
+  gulp.src(['bower_components/jquery/dist/jquery.js'])
   .pipe(sourcemaps.init())
   .pipe(uglify())
   .pipe(concat('vendor.min.js'))
@@ -97,6 +98,8 @@ gulp.task('jade', function() {
 
 });
 
+var imgwatch;
+
 gulp.task('sync', function() {
   sync.init({
     notify: false,
@@ -110,57 +113,74 @@ gulp.task('sync', function() {
   gulp.watch('cof/**/*.coffee', ['coffee']);
   gulp.watch('sty/**/*.styl', ['stylus']);
   gulp.watch('tpl/**/*.jade', ['jade']);
-  gulp.watch('pub/img/lrg/**/*').on('change', function(test) {
-    mogrify(test);
-  });
+  gulp.start('watch:start');
+
+});
+
+gulp.task('watch:start', function() {
+
+  if (!imgwatch) {
+    imgwatch = gulp.watch('pub/img/lrg/**/*');
+    imgwatch.on('change', mogrify);
+  }
+
+});
+
+gulp.task('watch:stop', function() {
+
+  if (imgwatch) {
+    imgwatch.end();
+    imgwatch = null;
+   }
 
 });
 
 function mogrify(data) {
 
-  console.log(data);
+  gulp.start('watch:stop');
 
   var images = ['.jpeg','.jpg','.png'];
   var sizes = ['2880','1440','1000'];
 
-  if (data.type.indexOf(['added','changed'])) {
- 
-    if (path.extname(data.path).length > 0 && images.indexOf(path.extname(data.path)) == true) {
+  if (['added','changed', 'renamed'].indexOf(data.type) != -1) {
+
+    console.log('we are in');
+    console.log(data);
+
+    if (path.extname(data.path).length > 0 && images.indexOf(path.extname(data.path)) != -1) {
+
       dirname = path.dirname(data.path);
+
       for (var i = 0, l = sizes.length; i < l; i++) {
 
+        if (dirname.match(sizes[i]) != null) {
+          gutil.log(gutil.colors.red('Image size matched in dir name, aborting'), dirname);
+          return true;
+        }
+
         // check if directory exists, if it doesnt, make it
-        console.log('mkdir ' + dirname + '/' + sizes[i]);
+        var sizeDir = dirname + '/' + sizes[i];
+
+        if (fs.existsSync(sizeDir) === false) {
+          gutil.log('Making directory', '\'' + gutil.colors.cyan(sizeDir) + '\'');
+          cp.execSync('mkdir ' + sizeDir);
+        }
+
+        cp.execSync('cp ' + data.path + ' ' + sizeDir + '/');
+
+        cp.execSync('mogrify -geometry ' + sizes[i] + 'x ' + sizeDir + '/' + path.basename(data.path));
+        gutil.log('Scaling image ', '\'' + gutil.colors.cyan(path.basename(data.path)) + '\'', 'to ' + gutil.colors.magenta(sizes[i] + 'x'));
+
       }
 
     }
 
   }
 
+  gulp.start('watch:start');
+  return true
+
 }
-
-gulp.task('mogrify', function(data) {
-
-  var images = ['jpeg','jpg','png'];
-
-  return gulp.src('pub/img/**/*')
-    .pipe(cache('images'))
-    .pipe(tap(function(file, t) {
-
-      console.log('starting');
-      console.log(file.path);
-
-      if (path.extname(file.path).length > 0 && path.extname(file.path).indexOf(images) === true) {
-        console.log('we have an image touched');
-        //console.log(file.path);
-        //console.log(path.dirname(file.path))
-        //
-      }
-    }));
-
-});
-
-
 
 gulp.task('watch', function() {
   gulp.watch('dat/**/*', ['objectus','stylus','jade']);
