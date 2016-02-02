@@ -14,8 +14,6 @@ var jade = require('gulp-jade');
 
 var sourcemaps = require('gulp-sourcemaps');
 
-var tap = require('gulp-tap');
-var cache = require('gulp-cache');
 var path = require('path');
 var fs = require('fs');
 var cp = require('child_process');
@@ -113,11 +111,11 @@ gulp.task('sync', function() {
   gulp.watch('cof/**/*.coffee', ['coffee']);
   gulp.watch('sty/**/*.styl', ['stylus']);
   gulp.watch('tpl/**/*.jade', ['jade']);
-  gulp.start('watch:start');
+  gulp.start('mogrify:start');
 
 });
 
-gulp.task('watch:start', function() {
+gulp.task('mogrify:start', function() {
 
   if (!imgwatch) {
     imgwatch = gulp.watch('pub/img/lrg/**/*');
@@ -126,7 +124,7 @@ gulp.task('watch:start', function() {
 
 });
 
-gulp.task('watch:stop', function() {
+gulp.task('mogrify:stop', function() {
 
   if (imgwatch) {
     imgwatch.end();
@@ -135,17 +133,15 @@ gulp.task('watch:stop', function() {
 
 });
 
+
 function mogrify(data) {
 
-  gulp.start('watch:stop');
+  gulp.start('mogrify:stop');
 
   var images = ['.jpeg','.jpg','.png'];
   var sizes = ['2880','1440','1000'];
 
   if (['added','changed', 'renamed'].indexOf(data.type) != -1) {
-
-    console.log('we are in');
-    console.log(data);
 
     if (path.extname(data.path).length > 0 && images.indexOf(path.extname(data.path)) != -1) {
 
@@ -177,7 +173,7 @@ function mogrify(data) {
 
   }
 
-  gulp.start('watch:start');
+  gulp.start('mogrify:start');
   return true
 
 }
@@ -190,5 +186,3 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['objectus','coffee', 'stylus', 'jade', 'vendors']);
-
-

@@ -1,8 +1,31 @@
 extends inc/layout
 
 block content
-  | this is index.jade
+
+  .page.home
+
+    .carousel
+      .slides
+        each val in [1,2,3]
+          .slide.off(class='slide' + val,data-slide=val)
+      .loader.on
+      .nav
+        .arrow.left
+        .arrow.right
+        .dots
+          each val in [1,2,3]
+            .dot.off(class='dot' + val,data-dot=val)
+
+
+    .arrows
+      include ../pub/svg/arrows.svg
+
+    .copy We are a full service creative studio that specializes in branding, packaging, and art direction.
+    .copy We work with our clients to elevate their brand by developing strategies and solutions to transform big ideas into stand out design.
+    .arrows
+      include ../pub/svg/arrows.svg
 
   script(type='text/javascript').
     Loader.load('/jst/index.js', 'Index');
+    Loader.load('/jst/carousel.js', 'Carousel');
 

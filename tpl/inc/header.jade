@@ -4,12 +4,20 @@ header
     a.logo(href='/')
       .vector
         include ../../pub/svg/logo1.svg
-      .tagline branding | packaging | direction
+      .tagline
+        .tag branding
+        .tag.bar  
+        .tag packaging
+        .tag.bar
+        .tag direction
 
     .menu
       ul
         li: a(href='/work/') work
+          .active.on
         li: a(href='/studio/') studio
+          .active.off
         li: a(href='/contact/') contact
+          .active.off
 
     .clear

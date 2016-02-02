@@ -1,0 +1,27 @@
+
+footer
+  .inner
+
+    .border
+      .logo
+        include ../../pub/svg/logo2.svg
+
+    .sections
+      .section.follow
+        .copy follow us
+        .socials
+          a.social(href=data.social.instagram,target='_blank')
+            include ../../pub/svg/instagram.svg
+          a.social(href=data.social.facebook,target='_blank')
+            include ../../pub/svg/facebook.svg
+          a.social(href=data.social.twitter,target='_blank')
+            include ../../pub/svg/twitter.svg
+      .section.address
+        a(href=data.social.map, target='_blank')
+          .copy 295 kansas street
+          .copy san francisco, california
+          .copy 94122
+      .section.email
+        .copy drop us a note
+        a.emailicon(href='mailto:' + data.social.mail, target='_blank')
+          include ../../pub/svg/email.svg
