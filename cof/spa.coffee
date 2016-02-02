@@ -10,6 +10,7 @@ Spa =
 
     $.get '/work/'
       .success (result) ->
+        console.log($(result).length)
         console.log($(result).filter('body').length)
         console.log($(result).filter('html').length)
         console.log($(result).filter('.container').length)
