@@ -1,5 +1,9 @@
 ---
+
 copy1: 20px brandon medium
 copy2: 20px brandon bold
+copy3: 16px brandon medium
 copys: 12px brandon medium
-copyl: 14px brandon light
+copyl: 16px brandon light
+
+h1: 30px brandon bold

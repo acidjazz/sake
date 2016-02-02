@@ -1,0 +1,34 @@
+---
+daffodil:
+  folder: daffodil
+  images: 9
+  title: Daffodil Digital
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ante vulputate, mollis justo ut, consectetur orci. Pellentesque porttitor odio eu pulvinar ornare. Ut ac mi vitae ex elementum iaculis eu ac velit. Suspendisse porttitor quam sit amet mi volutpat, nec interdum nulla facilisis. Donec ac nisl vitae massa malesuada facilisis. Mauris pulvinar malesuada mi, at lobortis massa rhoncus id. Quisque vehicula dolor quis egestas consequat. Quisque ullamcorper dignissim elit sit amet gravida. Etiam in mauris eget tellus venenatis porttitor.
+  services:
+    - brand identity
+    - logo design
+    - art direction
+    - photography
+    - website design
+volition:
+  folder: volition
+  images: 6
+  title: Volition Beauty
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ante vulputate, mollis justo ut, consectetur orci. Pellentesque porttitor odio eu pulvinar ornare. Ut ac mi vitae ex elementum iaculis eu ac velit. Suspendisse porttitor quam sit amet mi volutpat, nec interdum nulla facilisis. Donec ac nisl vitae massa malesuada facilisis. Mauris pulvinar malesuada mi, at lobortis massa rhoncus id. Quisque vehicula dolor quis egestas consequat. Quisque ullamcorper dignissim elit sit amet gravida. Etiam in mauris eget tellus venenatis porttitor.
+  services:
+    - brand identity
+    - logo design
+    - art direction
+    - photography
+    - website design
+destilado:
+  folder: destilado
+  images: 6
+  title: El Destilado
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ante vulputate, mollis justo ut, consectetur orci. Pellentesque porttitor odio eu pulvinar ornare. Ut ac mi vitae ex elementum iaculis eu ac velit. Suspendisse porttitor quam sit amet mi volutpat, nec interdum nulla facilisis. Donec ac nisl vitae massa malesuada facilisis. Mauris pulvinar malesuada mi, at lobortis massa rhoncus id. Quisque vehicula dolor quis egestas consequat. Quisque ullamcorper dignissim elit sit amet gravida. Etiam in mauris eget tellus venenatis porttitor.
+  services:
+    - brand identity
+    - logo design
+    - art direction
+    - photography
+    - website design

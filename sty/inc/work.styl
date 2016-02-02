@@ -1,0 +1,45 @@
+
+.page.work
+
+  > .tiles
+
+    > .tile
+      float left
+      width 33.33vw
+      height 33.33vw
+      animation cellInX 0.2s 0.8s ease-in both
+      position relative
+      for num in 0..10
+        &:nth-child({num})
+          animation-delay unit(0.8 + ( num*0.1 ), 's')
+      > .inner
+        margin 5%
+        width 90%
+        height 90%
+        background-size 200%
+        background-position 50% 50%
+        background-repeat no-repeat
+        transition background-size 1s linear
+      > .detail
+        position absolute
+        width 100%
+        height 100%
+        opacity 0
+        background-color: c.white1
+        transition opacity 0.2s linear
+        > .title
+          opacity 0
+          font: f.copy2
+          text-align center
+          line-height 33.33vw
+          text-transform uppercase
+          transform translate(0, -10px)
+          transition opacity 0.2s linear, transform 0.3s ease-out 0s
+      &:hover
+        > .detail
+          opacity 0.8
+          > .title
+            opacity 1
+            transform translate(0, 0)
+
+

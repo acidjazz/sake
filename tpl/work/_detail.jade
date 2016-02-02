@@ -1,0 +1,27 @@
+
+.page.detail 
+  .submenu
+    each job in data.work
+      if job.folder == current.folder
+        a.on(href='/work/' + job.folder)=job.title
+      else
+        a(href='/work/' + job.folder)=job.title
+
+  .details
+    .section.desc
+      .title=current.title
+      .desc=current.description
+    .section.services
+      .title services
+      .services
+        ul
+          each service in current.services
+            li=service
+          .clear
+    .clear
+    
+
+  - var n = 1, max = current.images;
+  .images 
+    while n <= max
+      img(src="/img/work/" + current.folder + "/" + (n++) + ".jpg")

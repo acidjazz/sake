@@ -1,0 +1,14 @@
+extends ../inc/layout
+
+block content
+
+  .page.work
+    .tiles
+      each job in data.work
+        a.tile(href='/work/' + job.folder)
+          .detail
+            .title=job.title
+          .inner(style="background-image: url('/img/work/" + job.folder + "/1.jpg');")
+    .clear
+
+

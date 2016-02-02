@@ -1,0 +1,55 @@
+
+.page.detail
+  max-width 1200px
+  margin auto
+  padding 0 50px
+
+  > .submenu
+    > a
+      display block
+      padding 3px
+      text-transform uppercase
+      font: f.copy3
+      letter-spacing 1px
+      transition color 0.1s linear
+      &.on, &:hover
+        color: c.gold1
+
+  > .details
+    border-top: 2px solid c.gold1
+    margin 20px 0
+    padding 20px 0
+    > .section
+      width 50%
+      float left
+      > .title
+        font: f.h1
+        text-transform uppercase
+        letter-spacing 2px
+        padding 0 0 20px 0
+      > .desc
+        margin 0 40px 0 0
+        font: f.copyl
+      &.services > .title
+        text-align center
+      > .services
+        margin 0 0 0 80px
+        > ul
+          padding 0px
+          margin 0px
+          > li
+            font: f.copyl
+            text-transform uppercase
+            list-style-type circle
+            letter-spacing 2px
+            float left
+            margin 0px
+            width 50%
+            padding 0px
+
+  > .images
+    text-align center
+    > img
+      display block
+      margin 20px auto
+
