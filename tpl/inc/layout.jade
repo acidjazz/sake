@@ -52,5 +52,10 @@ html(lang='en')
 
   body
     include header
-    block content
+    .container
+      block content
     include footer
+    script(type='text/javascript').
+      Loader.load('/jst/spa.js', 'Spa');
+
+
