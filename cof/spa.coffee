@@ -35,10 +35,10 @@ Spa =
       Spa.push()
 
   activate: ->
-    _.off 'header > .inner > .menu > ul > li > a .active'
+    _.off 'header > .inner > .menu > ul > li > a'
     for k, v of Spa.options
       if v is Spa.page
-        _.on "header > .inner > .menu > ul > li > a > .active.option_#{k}"
+        _.on "header > .inner > .menu > ul > li > a.option_#{k}"
 
   load: (page, cb) ->
     
