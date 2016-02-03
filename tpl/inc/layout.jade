@@ -19,14 +19,14 @@ html(lang='en')
     meta(property='og:url',content=data.meta.url)
     meta(property='og:title',content=data.meta.title)
     meta(property='og:type',content='website')
-    meta(property='og:image',content=data.meta.url + 'img/logo_1000x1000.png')
+    meta(property='og:image',content=data.meta.url + 'img/share.jpg')
     meta(property='og:description',content=data.meta.description)
 
     //- twitter
     meta(name='twitter:card',content='summary')
     meta(name='twitter:title',content=data.meta.title)
     meta(name='twitter:description',content=data.meta.description)
-    meta(name='twitter:image',content=data.url + 'img/logo_1000x1000.png') 
+    meta(name='twitter:image',content=data.meta.url + 'img/share.jpg') 
 
     link(rel="apple-touch-icon",sizes="57x57",href="/ico/apple-touch-icon-57x57.png")
     link(rel="apple-touch-icon",sizes="60x60",href="/ico/apple-touch-icon-60x60.png")
@@ -45,10 +45,10 @@ html(lang='en')
     link(rel="manifest",href="/ico/manifest.json")
     link(rel="mask-icon",href="/ico/safari-pinned-tab.svg",color="#5bbad5")
     link(rel="shortcut icon",href="/ico/favicon.ico")
-    meta(name="msapplication-TileColor",content="#4d394b")
+    meta(name="msapplication-TileColor",content="#da532c")
     meta(name="msapplication-TileImage",content="/ico/mstile-144x144.png")
     meta(name="msapplication-config",content="/ico/browserconfig.xml")
-    meta(name="theme-color",content="#4d394b")
+    meta(name="theme-color",content=data.colors.gold1)
 
   body
     include header
