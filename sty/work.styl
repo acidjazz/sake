@@ -7,11 +7,11 @@
       float left
       width 33.33vw
       height 33.33vw
-      animation cellInX 0.2s 0.8s ease-in both
+      animation cellInX 0.2s 0.25s ease-in both
       position relative
       for num in 0..10
         &:nth-child({num})
-          animation-delay unit(0.8 + ( num*0.1 ), 's')
+          animation-delay unit(0.25 + ( num*0.1 ), 's')
       > .inner
         margin 5%
         width 90%

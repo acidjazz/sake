@@ -1,7 +1,7 @@
 
 header
   .inner
-    a.logo(href='/')
+    a.logo(href='/',data-page='/')
       .vector
         include ../../pub/svg/logo1.svg
       .tagline
@@ -13,11 +13,11 @@ header
 
     .menu
       ul
-        li: a(href='/work/') work
-          .active.off
-        li: a(href='/studio/') studio
-          .active.off
-        li: a(href='/contact/') contact
-          .active.off
+        li: a(href='/work/',data-page='/work/') work
+          .active.option_work.off
+        li: a(href='/studio/', data-page='/studio/') studio
+          .active.option_studio.off
+        li: a(href='/contact/', data-page='/contact/') contact
+          .active.option_contact.off
 
     .clear

@@ -9,10 +9,8 @@ Carousel =
     console.log 'Carousel.i()'
 
     Carousel.handlers()
-    setTimeout ->
-      Carousel.slide 1
-      _.off '.loader'
-    , 1200
+    Carousel.slide 1
+    _.off '.loader'
 
   handlers: ->
     $('.carousel > .nav > .arrow').on 'click', Carousel.arrowHandler
@@ -20,6 +18,7 @@ Carousel =
 
   arrowHandler: ->
     Carousel.arrow $(this).hasClass('right')
+    console.log 'Carousel.arrowHandler()'
 
   dotHandler: ->
 
