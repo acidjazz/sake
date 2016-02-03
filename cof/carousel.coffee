@@ -6,8 +6,6 @@ Carousel =
 
   i: ->
 
-    console.log 'Carousel.i()'
-
     Carousel.handlers()
     Carousel.slide 1
     _.off '.loader'
@@ -18,7 +16,6 @@ Carousel =
 
   arrowHandler: ->
     Carousel.arrow $(this).hasClass('right')
-    console.log 'Carousel.arrowHandler()'
 
   dotHandler: ->
 

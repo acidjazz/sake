@@ -3,9 +3,10 @@
   .submenu
     each job in data.work
       if job.folder == current.folder
-        a.on(href='/work/' + job.folder)=job.title
+        a.on(href='/work/' + job.folder + '/')=job.title
       else
-        a(href='/work/' + job.folder)=job.title
+        a(href='/work/' + job.folder + '/')=job.title
+    a(href='/work/') All
 
   .details
     .section.desc

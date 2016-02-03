@@ -17,9 +17,27 @@ Spa =
 
   handlers: ->
 
+    # main menu
     $('header > .inner > .menu > ul > li > a, header > .inner > a.logo').on 'click', Spa.menuHandler
 
+    # back button
     $(window).bind 'popstate', Spa.pop
+
+    # work tile menu
+    $('#container').on 'click', '.page.work > .tiles > a.tile, .page.detail > .submenu > a', Spa.tileHandler
+
+
+  tileHandler: (e) ->
+
+    e.preventDefault()
+
+    page = $(this).attr 'href'
+
+    return true if page is undefined
+    return true if page is location.pathname
+
+    Spa.load page, ->
+      Spa.push()
 
   menuHandler: (e) ->
 
@@ -37,7 +55,7 @@ Spa =
   activate: ->
     _.off 'header > .inner > .menu > ul > li > a'
     for k, v of Spa.options
-      if v is Spa.page
+      if Spa.page.match(v) isnt null
         _.on "header > .inner > .menu > ul > li > a.option_#{k}"
 
   load: (page, cb) ->

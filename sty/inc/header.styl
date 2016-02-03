@@ -74,7 +74,7 @@ header
               transition opacity 0.3s ease-out, transform 0.2s ease-out, height 0.2s ease-out
             &:hover > .bar
               opacity 1 !important
-              transform translate(0, 30px) !important
+              transform translate(0, 28px) !important
             &.on > .bar
               opacity 1
               transform translate(0, -10px) !important
@@ -85,3 +85,36 @@ header
             &.on > .copy
               color: c.white1
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+
+  header
+    > .inner
+      max-width 1200px
+      margin auto
+      padding 20px 0 0 0
+      > .logo
+        float none
+      > .logo > .vector
+        width 90%
+        height 65px
+        margin auto
+      > .logo > .tagline
+        width 87%
+        margin auto
+
+       > .menu
+        float none
+        text-align center
+        > ul
+          padding 0
+          margin 0
+          > li
+            display inline-block
+            padding 20px 0
+            > a
+              display block
+              text-align center
+              width 30vw
+              > .bar
+                width 100%
+                margin 0 0 0 0
