@@ -1,9 +1,12 @@
 ---
 daffodil:
   folder: daffodil
-  images: 9
+  images: 6
   title: Daffodil Digital
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ante vulputate, mollis justo ut, consectetur orci. Pellentesque porttitor odio eu pulvinar ornare. Ut ac mi vitae ex elementum iaculis eu ac velit. Suspendisse porttitor quam sit amet mi volutpat, nec interdum nulla facilisis. Donec ac nisl vitae massa malesuada facilisis. Mauris pulvinar malesuada mi, at lobortis massa rhoncus id. Quisque vehicula dolor quis egestas consequat. Quisque ullamcorper dignissim elit sit amet gravida. Etiam in mauris eget tellus venenatis porttitor.
+  description: |
+    Daffodil Digital is a new social and digital marketing agency helping brands tell their stories in smarter ways.
+    Designsake Studio was brought on board to create a brand that was fresh and approachable. Using bright colors, custom illustrations, and imagery we created a design that makes strategic storytelling in the digital space not only inspiring but authentic. Stop and smell the Daffodils.
+
   services:
     - brand identity
     - logo design
@@ -14,7 +17,10 @@ volition:
   folder: volition
   images: 6
   title: Volition Beauty
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ante vulputate, mollis justo ut, consectetur orci. Pellentesque porttitor odio eu pulvinar ornare. Ut ac mi vitae ex elementum iaculis eu ac velit. Suspendisse porttitor quam sit amet mi volutpat, nec interdum nulla facilisis. Donec ac nisl vitae massa malesuada facilisis. Mauris pulvinar malesuada mi, at lobortis massa rhoncus id. Quisque vehicula dolor quis egestas consequat. Quisque ullamcorper dignissim elit sit amet gravida. Etiam in mauris eget tellus venenatis porttitor.
+  description: |
+    Volition is an innovative brand out to change the beauty industry. Unlike traditional companies, Volition was born out of the idea that customers have the right to drive product decisions while knowing what is in their products, how much it costs to make them, and where they are made. All product ideas and decisions are entirely crowd sourced.
+    In branding Volition Beauty, Designsake Studio developed the logo, patterns, icons, website, and product packaging with the intent of highlighting the company's core values of transparency, prestige quality, innovation, and community.
+
   services:
     - brand identity
     - logo design
@@ -32,3 +38,53 @@ destilado:
     - art direction
     - photography
     - website design
+benefit:
+  folder: benefit
+  images: 6
+  title: Benefit Cosmetics
+  description: |
+    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity. 
+    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+  services:
+    - brand identity
+    - logo design
+    - art direction
+
+goldpr:
+  folder: goldpr
+  images: 6
+  title: Gold PR
+  description: |
+    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity. 
+    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+  services:
+    - brand identity
+    - logo design
+    - art direction
+
+sephora:
+  folder: sephora
+  images: 5
+  title: Sephora
+  description: |
+    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity. 
+    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+  services:
+    - brand identity
+    - logo design
+    - art direction
+
+
+ayla:
+  folder: ayla
+  images: 1
+  title: Ayla Beauty
+  description: |
+    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity. 
+    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+  services:
+    - brand identity
+    - logo design
+    - art direction
+
+

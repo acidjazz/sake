@@ -6,12 +6,15 @@
         a.on(href='/work/' + job.folder + '/')=job.title
       else
         a(href='/work/' + job.folder + '/')=job.title
-    a(href='/work/') All
+  .clear
 
   .details
     .section.desc
       .title=current.title
-      .desc=current.description
+      - var descs = current.description.split("\n");
+      .desc
+        each desc in descs
+          p=desc
     .section.services
       .title services
       .services

@@ -5,8 +5,11 @@
   padding 0 50px
 
   > .submenu
+    max-height 100px
     > a
+      float left
       display block
+      width 400px
       padding 3px
       text-transform uppercase
       font: f.copy3
@@ -20,25 +23,27 @@
     margin 20px 0
     padding 20px 0
     > .section
-      width 50%
-      float left
+      &.desc
+        float left
+        width 60%
+      &.services
+        width 35%
+        float right
       > .title
         font: f.h1
         text-transform uppercase
         letter-spacing 2px
         padding 0 0 20px 0
       > .desc
-        margin 0 40px 0 0
         font: f.copyl
       &.services > .title
         text-align center
       > .services
-        margin 0 0 0 80px
         > ul
           padding 0px
           margin 0px
           > li
-            font: f.copyl
+            font: f.copy4
             text-transform uppercase
             list-style-type circle
             letter-spacing 2px
@@ -52,4 +57,5 @@
     > img
       display block
       margin 20px auto
+      width 100%
 
