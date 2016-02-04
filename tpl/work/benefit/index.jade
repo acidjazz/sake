@@ -1,6 +1,18 @@
 
 extends ../../inc/layout
 
+
+block meta
+  -
+    var client = 'benefit';
+    var current = data.work[client];
+    var meta = {
+      title: current.title + ' - ' + data.meta.title, 
+      description: current.description, 
+      url: data.meta.url + 'work/' + client + '/',
+      image: data.meta.url + 'img/work/' + client + '/1.jpg'
+    };
+
 block content
   - var current = data.work.benefit;
   include ../_detail
