@@ -615,8 +615,9 @@ As a brand they continue to experiment with color, patterns, and type everywhere
       </div>
     </footer>
     <script type="text/javascript">
-      Loader.load('/jst/preimg.js');
-      Loader.load('/jst/spa.js', 'Spa');
+      Loader.load('/jst/preimg.js', undefined, function () {
+        Loader.load('/jst/spa.js', 'Spa');
+      });
     </script>
   </body>
 </html>
