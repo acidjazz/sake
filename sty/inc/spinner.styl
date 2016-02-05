@@ -6,7 +6,7 @@
   height 100vw
   background-image url(/img/pattern.jpg)
   opacity 0.8
-  animation spinFadeIn 0.2s 0s ease-in both
+  animation spinFadeIn 0.1s 0s ease-in both
   onoff()
   > .inner
     position relative
@@ -14,6 +14,7 @@
     height 100%
     > .patterns
       animation spinner 2s infinite
+      animation-delay 0.3s
       position absolute
       width 190px
       height 180px
@@ -29,22 +30,26 @@
         &:nth-child(1)
           top 25px
           left 50px
+          animation fadeIn 0.1s 0.05s ease-in both
         &:nth-child(2)
           transform rotate(90deg)
           top 55px
           left 80px
+          animation fadeIn 0.1s 0.1s ease-in both
           > svg > path
             animation-delay 0.25s
         &:nth-child(3)
           transform rotate(180deg)
           top 85px
           left 50px
+          animation fadeIn 0.1s 0.15s ease-in both
           > svg > path
             animation-delay 0.5s
         &:nth-child(4)
           transform rotate(-90deg)
           top 55px
           left 20px
+          animation fadeIn 0.1s 0.2s ease-in both
           > svg > path
             animation-delay 0.75s
 
@@ -60,7 +65,7 @@
   100%
     fill: c.blue1
 
-@keyframes spinfadeIn
+@keyframes spinFadeIn
   from
     opacity 0
   to
