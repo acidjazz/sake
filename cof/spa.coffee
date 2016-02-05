@@ -34,7 +34,9 @@ Spa =
     $(window).bind 'popstate', Spa.pop
 
     # work tile menu
-    $('#container > #inner').on 'click', '.page.work > .tiles > a.tile, .page.detail > .submenu > a', Spa.tileHandler
+    $('#container > #inner').on 'click', '.page.work > .tiles > a.tile', Spa.tileHandler
+    # work sub menu
+    $('#container > #inner').on 'click', '.page.detail > .submenu > a', Spa.submenuHandler
 
 
   tileHandler: (e) ->
@@ -48,6 +50,39 @@ Spa =
 
     Spa.load page, ->
       Spa.push()
+
+
+  submenuHandler: (e) ->
+
+    e.preventDefault()
+
+    page = $(this).attr 'href'
+
+    return true if page is undefined
+    return true if page is location.pathname
+
+    _.on '.spinner'
+
+    _.off '.submenu a'
+    _.on ".submenu a.item_#{page.replace(/\//g, '')}"
+    
+    $.get page
+      .success (result) ->
+        html = $(result).filter('#container').find('#inner').find('.details').html()
+        Preimg html, (complete) ->
+          console.log complete
+        , (done) ->
+          setTimeout ->
+            _.off '.spinner'
+            $('#container > #inner .details').html html
+            Spa.page = page
+            cb?()
+            Spa.activate()
+            Spa.push()
+          , 1000
+
+
+
 
   menuHandler: (e) ->
 

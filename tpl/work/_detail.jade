@@ -3,7 +3,7 @@
   .submenu
     each job in data.work
       if job.folder == current.folder
-        a.on(href='/work/' + job.folder + '/')=job.title
+        a.on(href='/work/' + job.folder + '/',class='item_' + job.folder)=job.title
       else
         a(href='/work/' + job.folder + '/')=job.title
   .clear
@@ -25,7 +25,7 @@
     .clear
     
 
-  - var n = 1, max = current.images;
-  .images 
-    while n <= max
-      img(src="/img/work/" + current.folder + "/" + (n++) + ".jpg")
+    - var n = 1, max = current.images;
+    .images 
+      while n <= max
+        img(src="/img/work/" + current.folder + "/" + (n++) + ".jpg")
