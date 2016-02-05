@@ -64,6 +64,7 @@ Spa =
     _.on '.spinner'
     _.off '.submenu a'
     _.on ".submenu a.item_#{page.replace('work', '').replace(/\//g, '')}"
+    console.log ".submenu a.item_#{page.replace('work', '').replace(/\//g, '')}"
     
     $.get page
       .success (result) ->

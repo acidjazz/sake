@@ -5,7 +5,7 @@
       if job.folder == current.folder
         a.on(href='/work/' + job.folder + '/',class='item_' + job.folder)=job.title
       else
-        a(href='/work/' + job.folder + '/')=job.title
+        a(href='/work/' + job.folder + '/',class='item_' + job.folder)=job.title
   .clear
 
   .details
