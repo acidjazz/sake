@@ -17,13 +17,15 @@ body
   margin 0
   font: f.copy1
   overflow-y scroll
+  min-height 500px
 a
   text-decoration none
   color: c.black1
 
 #container
   min-height 500px
-  onoff()
+  > #inner
+    onoff()
 
 .page
   animation cellOutY 0.2s 0.25s ease-in both

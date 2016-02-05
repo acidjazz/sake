@@ -73,12 +73,13 @@ html(lang='en')
 
   body
     include header
-    .container#container
-      block content
+    .container#container.off
+      #inner.off
+        block content
     include spinner
     include footer
     script(type='text/javascript').
-      Loader.load('/jst/spa.js', 'Spa');
       Loader.load('/jst/preimg.js');
+      Loader.load('/jst/spa.js', 'Spa');
 
 

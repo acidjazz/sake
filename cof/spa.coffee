@@ -15,6 +15,16 @@ Spa =
     Spa.page = Spa.original = location.pathname
     Spa.activate Spa.page
 
+    Preimg $('#container > #inner'), (complete) ->
+          console.log complete
+        , (done) ->
+          setTimeout ->
+            _.off '.spinner'
+            _.on '#container > #inner'
+          , 1000
+
+
+
   handlers: ->
 
     # main menu
@@ -24,7 +34,7 @@ Spa =
     $(window).bind 'popstate', Spa.pop
 
     # work tile menu
-    $('#container').on 'click', '.page.work > .tiles > a.tile, .page.detail > .submenu > a', Spa.tileHandler
+    $('#container > #inner').on 'click', '.page.work > .tiles > a.tile, .page.detail > .submenu > a', Spa.tileHandler
 
 
   tileHandler: (e) ->
@@ -64,17 +74,17 @@ Spa =
     
     $.get page
       .success (result) ->
-        html = $(result).filter('#container')[0]
+        html = $(result).filter('#container').find('#inner')[0]
         Preimg html, (complete) ->
           console.log complete
         , (done) ->
           setTimeout ->
             _.off '.spinner'
-            $('#container').html html
+            $('#container > #inner').html html
             Spa.page = page
             cb?()
             Spa.activate()
-          , 3000
+          , 1000
 
   push: ->
     history.pushState {url: Spa.page}, "Design Sake Studio - #{Spa.page}", Spa.page
