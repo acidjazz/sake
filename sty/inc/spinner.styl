@@ -1,0 +1,69 @@
+.spinner
+  position absolute
+  top 0px
+  left 0px
+  width 100%
+  height 100vw
+  background-image url(/img/pattern.jpg)
+  opacity 0.8
+  animation spinFadeIn 0.2s 0s ease-in both
+  onoff()
+  > .inner
+    position relative
+    width 100%
+    height 100%
+    > .patterns
+      animation spinner 2s infinite
+      position absolute
+      width 190px
+      height 180px
+      top 50%
+      left 50%
+      margin -100px 0 0 -100px
+      > .pattern
+        position absolute
+        width 90px
+        height 70px
+        > svg > path
+          animation glow 5s linear infinite
+        &:nth-child(1)
+          top 25px
+          left 50px
+        &:nth-child(2)
+          transform rotate(90deg)
+          top 55px
+          left 80px
+          > svg > path
+            animation-delay 0.25s
+        &:nth-child(3)
+          transform rotate(180deg)
+          top 85px
+          left 50px
+          > svg > path
+            animation-delay 0.5s
+        &:nth-child(4)
+          transform rotate(-90deg)
+          top 55px
+          left 20px
+          > svg > path
+            animation-delay 0.75s
+
+@keyframes spinner
+  100%
+    transform rotate(360deg)
+
+@keyframes glow
+  0%
+    fill: c.blue1
+  50%
+    fill: c.gold1
+  100%
+    fill: c.blue1
+
+@keyframes spinfadeIn
+  from
+    opacity 0
+  to
+    opacity 0.8
+
+

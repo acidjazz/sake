@@ -59,14 +59,22 @@ Spa =
         _.on "header > .inner > .menu > ul > li > a.option_#{k}"
 
   load: (page, cb) ->
+
+    _.on '.spinner'
     
     $.get page
       .success (result) ->
         html = $(result).filter('#container')[0]
-        $('#container').html html
-        Spa.page = page
-        cb?()
-        Spa.activate()
+        Preimg html, (complete) ->
+          console.log complete
+        , (done) ->
+          setTimeout ->
+            _.off '.spinner'
+            $('#container').html html
+            Spa.page = page
+            cb?()
+            Spa.activate()
+          , 3000
 
   push: ->
     history.pushState {url: Spa.page}, "Design Sake Studio - #{Spa.page}", Spa.page
