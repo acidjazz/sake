@@ -1,12 +1,11 @@
 .spinner
-  position absolute
+  position fixed
   top 0px
   left 0px
   width 100%
-  height 100vw
+  height 100%
   background-image url(/img/pattern.jpg)
   opacity 0.8
-  animation spinFadeIn 0.1s 0s ease-in both
   onoff()
   > .inner
     position relative
@@ -64,11 +63,3 @@
     fill: c.gold1
   100%
     fill: c.blue1
-
-@keyframes spinFadeIn
-  from
-    opacity 0
-  to
-    opacity 0.8
-
-
