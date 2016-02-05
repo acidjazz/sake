@@ -62,9 +62,8 @@ Spa =
     return true if page is location.pathname
 
     _.on '.spinner'
-
     _.off '.submenu a'
-    _.on ".submenu a.item_#{page.replace(/\//g, '')}"
+    _.on ".submenu a.item_#{page.replace('work', '').replace(/\//g, '')}"
     
     $.get page
       .success (result) ->
@@ -80,9 +79,6 @@ Spa =
             Spa.activate()
             Spa.push()
           , 1000
-
-
-
 
   menuHandler: (e) ->
 
