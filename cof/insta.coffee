@@ -4,16 +4,17 @@ Insta =
   token: '264367793.55cd6c3.ae227ede2f5c48eaab95ca57ffc4c0f6'
   token: '1709913627.87976c3.0415bd97d8104df3af8110e57d5f1349'
   posts: 4
+  loaded: false
 
   i: ->
 
     console.log 'Insta.i()'
-    if window.instagramLoaded isnt true
+    if Insta.loaded isnt true
       Insta.load()
 
   load: ->
     Loader.load "#{Insta.endpoint}?access_token=#{Insta.token}&callback=Insta.callback"
-    window.instagramLoaded = true
+    Insta.loaded = true
 
   callback: (json) ->
     for post, index in json.data
