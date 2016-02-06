@@ -36,9 +36,10 @@ Spa =
     $(window).bind 'popstate', Spa.pop
 
     # work tile menu
-    $('#container > #inner').on 'click', '.page.work > .tiles > a.tile', Spa.tileHandler
+    $('#container').on 'click', '.page.work > .tiles > a.tile', Spa.tileHandler
+
     # work sub menu
-    $('#container > #inner').on 'click', '.page.detail > .submenu > a', Spa.submenuHandler
+    $('#container').on 'click', '.page.detail > .submenu > a', Spa.submenuHandler
 
 
   tileHandler: (e) ->
@@ -50,11 +51,11 @@ Spa =
     return true if page is undefined
     return true if page is location.pathname
 
-    Spa.load page, ->
+    Spa.load page, '#inner', '#container > #inner', ->
       Spa.push()
 
   submenuHandler: (e) ->
-
+    
     e.preventDefault()
 
     page = $(this).attr 'href'
@@ -98,7 +99,6 @@ Spa =
           $('.spinner > .complete').css 'height', "#{complete*100}%"
         , (done) ->
           $('.spinner > .complete').css 'height', '100%'
-          console.log 'we are done'
           setTimeout ->
             _.off '.spinner'
             $('.spinner > .complete').css 'height', '0%'
