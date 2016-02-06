@@ -27,13 +27,14 @@ Preimg = (html, progress, complete) ->
     ###
     #
    load = ->
+
      loaded = 0
+     total = urls.length
 
      if loaded is total then complete(true)
 
      images = []
 
-     total = urls.length
 
      for url, i in urls
        images[i] = new Image()

@@ -96,10 +96,9 @@ Spa =
         html = $(result).filter('#container').find(find)
         Preimg html, (complete) ->
           $('.spinner > .complete').css 'height', "#{complete*100}%"
-          console.log complete
         , (done) ->
-          console.log 'Pre.load() called Preimg.done()'
           $('.spinner > .complete').css 'height', '100%'
+          console.log 'we are done'
           setTimeout ->
             _.off '.spinner'
             $('.spinner > .complete').css 'height', '0%'
