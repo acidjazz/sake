@@ -38,7 +38,6 @@ Preimg = (html, progress, complete) ->
      for url, i in urls
        images[i] = new Image()
        images[i].src = url
-       console.log url
        images[i].onload = ->
          loaded++
          perc = Math.round(loaded/total*100)/100

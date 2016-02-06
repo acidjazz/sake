@@ -1,0 +1,43 @@
+.page.home
+  > .instagram
+    > .title
+      font: f.copy1
+      color: c.gold1
+      text-transform uppercase
+      padding 0 0 0 4vw
+    > .posts
+      text-align center
+      > .post
+        width 20vw
+        height 20vw
+        padding 2vw
+        position relative
+        display inline-block
+        animation cellInX 0.2s 0.25s ease-in both
+        for num in 0..15
+          &:nth-child({num})
+            animation-delay unit(0.25 + ( num*0.1 ), 's')
+        > img
+          width inherit
+          height inherit
+        > .details
+          position absolute
+          opacity 0
+          top 2vw
+          left 2vw
+          bottom 2vw
+          right 2vw
+          background-color: c.white1
+          background-image url(/img/pattern.jpg)
+          transition opacity 0.2s linear
+          > .likes
+            text-align center
+            line-height 20vw
+            transform perspective(1400px) rotateX(90deg)
+            transition opacity 0.2s linear, transform 0.3s ease-out 0.2s
+          &:hover
+            opacity 0.8
+            > .likes
+              opacity 1
+              transform perspective(1400px) rotateX(0deg)
+

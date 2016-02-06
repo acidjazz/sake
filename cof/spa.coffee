@@ -1,6 +1,7 @@
 
 Spa =
 
+  instagram: false
   original: null
   page: null
   options:
@@ -16,14 +17,14 @@ Spa =
     Spa.activate Spa.page
 
     Preimg $('#container > #inner'), (complete) ->
-          console.log complete
-        , (done) ->
-          setTimeout ->
-            _.off '.spinner'
-            _.on '#container > #inner'
-          , 1000
-
-
+      console.log 'hi', Math.round(100*(1-complete))/100
+      $('.spinner > .complete').css 'opacity', Math.round(100*(1-complete))/100
+    , (done) ->
+      setTimeout ->
+        _.off '.spinner'
+        $('.spinner > .complete').css 'opacity', 1
+        _.on '#container > #inner'
+      , 1000
 
   handlers: ->
 
@@ -51,7 +52,6 @@ Spa =
     Spa.load page, ->
       Spa.push()
 
-
   submenuHandler: (e) ->
 
     e.preventDefault()
@@ -64,23 +64,10 @@ Spa =
     _.on '.spinner'
     _.off '.submenu a'
     _.on ".submenu a.item_#{page.replace('work', '').replace(/\//g, '')}"
-    console.log ".submenu a.item_#{page.replace('work', '').replace(/\//g, '')}"
-    
-    $.get page
-      .success (result) ->
-        html = $(result).filter('#container').find('#inner').find('.details').html()
-        Preimg html, (complete) ->
-          console.log complete
-        , (done) ->
-          setTimeout ->
-            _.off '.spinner'
-            $('#container > #inner .details').html html
-            Spa.page = page
-            cb?()
-            Spa.activate()
-            Spa.push()
-          , 1000
 
+    Spa.load page, '.details', '#container > #inner .details', ->
+      Spa.push()
+    
   menuHandler: (e) ->
 
     e.preventDefault()
@@ -90,8 +77,7 @@ Spa =
     return true if page is undefined
     return true if page is location.pathname
 
-
-    Spa.load page, ->
+    Spa.load page, '#inner', '#container > #inner', ->
       Spa.push()
 
   activate: ->
@@ -100,19 +86,21 @@ Spa =
       if Spa.page.match(v) isnt null
         _.on "header > .inner > .menu > ul > li > a.option_#{k}"
 
-  load: (page, cb) ->
+  load: (page, find, replace, cb) ->
 
     _.on '.spinner'
     
     $.get page
       .success (result) ->
-        html = $(result).filter('#container').find('#inner')[0]
+        html = $(result).filter('#container').find(find)
         Preimg html, (complete) ->
           console.log complete
         , (done) ->
           setTimeout ->
             _.off '.spinner'
-            $('#container > #inner').html html
+            $('.spinner > .complete').css 'opacity', 1
+            $(replace).replaceWith html
+            _.on '#container > #inner'
             Spa.page = page
             cb?()
             Spa.activate()
