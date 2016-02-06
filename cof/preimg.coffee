@@ -27,12 +27,12 @@ Preimg = (html, progress, complete) ->
     ###
     #
    load = ->
+     loaded = 0
 
      if loaded is total then complete(true)
 
      images = []
 
-     loaded = 0
      total = urls.length
 
      for url, i in urls

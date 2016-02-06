@@ -17,12 +17,13 @@ Spa =
     Spa.activate Spa.page
 
     Preimg $('#container > #inner'), (complete) ->
-      console.log 'hi', Math.round(100*(1-complete))/100
-      $('.spinner > .complete').css 'opacity', Math.round(100*(1-complete))/100
+      console.log "#{complete*100}%"
+      $('.spinner > .complete').css 'height', "#{complete*100}%"
     , (done) ->
+      $('.spinner > .complete').css 'height', '100%'
       setTimeout ->
         _.off '.spinner'
-        $('.spinner > .complete').css 'opacity', 1
+        $('.spinner > .complete').css 'height', '0%'
         _.on '#container > #inner'
       , 1000
 
@@ -94,11 +95,14 @@ Spa =
       .success (result) ->
         html = $(result).filter('#container').find(find)
         Preimg html, (complete) ->
+          $('.spinner > .complete').css 'height', "#{complete*100}%"
           console.log complete
         , (done) ->
+          console.log 'Pre.load() called Preimg.done()'
+          $('.spinner > .complete').css 'height', '100%'
           setTimeout ->
             _.off '.spinner'
-            $('.spinner > .complete').css 'opacity', 1
+            $('.spinner > .complete').css 'height', '0%'
             $(replace).replaceWith html
             _.on '#container > #inner'
             Spa.page = page
