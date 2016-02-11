@@ -43,5 +43,3 @@ Carousel =
     _.on ".slides > .slide.slide#{Carousel.sliden}"
     _.on ".carousel > .nav > .dots > .dot#{Carousel.sliden}"
 
-
-
