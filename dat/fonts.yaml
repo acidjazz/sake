@@ -1,10 +1,11 @@
 ---
 
 copy1: 20px brandon medium
-copy2: 20px brandon bold
+copy2: 16px brandon bold
 copy3: 16px brandon medium
 copys: 12px brandon medium
 copyl: 16px brandon light
 copy4: 12px brandon light
+copy5: 20px brandon bold
 
 h1: 30px brandon bold

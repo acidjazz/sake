@@ -1,4 +1,16 @@
 ---
+batch:
+  folder: batch
+  images: 5
+  title: Batch and Batter
+  description: |
+    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity. 
+    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+  services:
+    - brand identity
+    - logo design
+    - art direction
+
 daffodil:
   folder: daffodil
   images: 6
@@ -6,13 +18,13 @@ daffodil:
   description: |
     Daffodil Digital is a new social and digital marketing agency helping brands tell their stories in smarter ways.
     Designsake Studio was brought on board to create a brand that was fresh and approachable. Using bright colors, custom illustrations, and imagery we created a design that makes strategic storytelling in the digital space not only inspiring but authentic. Stop and smell the Daffodils.
-
   services:
     - brand identity
     - logo design
     - art direction
     - photography
     - website design
+
 volition:
   folder: volition
   images: 6
@@ -73,8 +85,6 @@ sephora:
     - brand identity
     - logo design
     - art direction
-
-
 ayla:
   folder: ayla
   images: 1
