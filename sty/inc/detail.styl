@@ -22,6 +22,7 @@
     border-top: 2px solid c.gold1
     margin 20px 0
     padding 20px 0
+    animation cellOutY 0.2s 0.25s ease-in both
     > .section
       &.desc
         float left
@@ -52,10 +53,40 @@
             width 50%
             padding 0px
 
-  > .images
-    text-align center
-    > img
-      display block
-      margin 20px auto
-      width 100%
+    > .images
+      text-align center
+      animation cellInY 0.2s 0s ease-in both
+      for num in 0..10
+        &:nth-child({num})
+          animation-delay unit(num*0.05, 's')
+      > img
+        display block
+        margin 20px auto
+        width 100%
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .page.detail
+    padding 20px 10px
+    > .submenu
+      max-height 100px
+      > a
+        float left
+        display block
+        width 90%
+   
+    > .details
+      > .section
+        &.desc
+          float non
+          width 100%
+        &.services
+          width 100%
+          float none
+        &.services > .title
+          text-align left
+        > .services
+          > ul
+            margin 0 0 20px 20px
+            > li
+              width 100%
+   

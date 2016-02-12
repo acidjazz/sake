@@ -6,8 +6,8 @@ block content
 
     .carousel
       .slides
-        each val in [1,2,3]
-          .slide.off(class='slide' + val,data-slide=val)
+        each val, index in data.carousel
+          .slide.off(class='slide' + (index+1),data-slide=(index+1),style='background-image: url(/img/lrg/carousel/1440/' + val+')')
       .loader.on
       .nav
         .arrow.left
@@ -24,7 +24,13 @@ block content
     .arrows
       include ../pub/svg/arrows.svg
 
+    .instagram
+      .title instagram
+      .posts
+
   script(type='text/javascript').
     Loader.load('/jst/index.js', 'Index');
     Loader.load('/jst/carousel.js', 'Carousel');
+    Loader.load('/jst/insta.js', 'Insta');
+    console.log('this is a test');
 

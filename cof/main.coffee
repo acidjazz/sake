@@ -1,4 +1,3 @@
-
 _ =
 
   off: (el) ->
@@ -56,5 +55,3 @@ _ =
     _gaq.push ['_trackEvent', category, action, label, value]
   rand: (min, max) ->
     return Math.floor(Math.random() * max) + min
-
-  

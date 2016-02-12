@@ -74,9 +74,13 @@ html(lang='en')
   body
     include header
     .container#container
-      block content
+      #inner.off
+        block content
+    include spinner
     include footer
     script(type='text/javascript').
-      Loader.load('/jst/spa.js', 'Spa');
+      Loader.load('/jst/preimg.js', undefined, function () {
+        Loader.load('/jst/spa.js', 'Spa');
+      });
 
 

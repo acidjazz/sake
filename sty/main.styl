@@ -17,15 +17,18 @@ body
   margin 0
   font: f.copy1
   overflow-y scroll
+  min-height 500px
 a
   text-decoration none
   color: c.black1
 
 #container
   min-height 500px
+  > #inner
+    onoff()
 
 .page
-  animation cellOutY 0.2s 0.25s ease-in both
+  animation cellOutY 0.2s 0s ease-in both
   &.uc
     font: f.h1
     text-align center
@@ -40,5 +43,6 @@ a
     font: f.copy2
     padding 10px 0
 
-
+@import index
 @import work
+@import studio

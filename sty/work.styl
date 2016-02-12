@@ -8,8 +8,8 @@
       display inline-block
       width 32.6vw
       height 32.6vw
-      animation cellInX 0.2s 0.25s ease-in both
       position relative
+      animation cellInX 0.2s 0.25s ease-in both
       for num in 0..10
         &:nth-child({num})
           animation-delay unit(0.25 + ( num*0.1 ), 's')
@@ -23,10 +23,12 @@
         transition background-size 1s linear
       > .detail
         position absolute
-        width 100%
-        height 100%
+        width 90%
+        height 90%
+        margin 5%
         opacity 0
         background-color: c.white1
+        background-image url(/img/pattern.jpg)
         transition opacity 0.2s linear
         > .title
           opacity 0
@@ -35,23 +37,26 @@
           text-align center
           line-height 33.33vw
           text-transform uppercase
-          transform translate(0, -20px)
-          transition opacity 0.2s linear, transform 0.3s ease-out 0s
+          transform-origin middle
+          transform perspective(1400px) rotateX(90deg)
+          transition opacity 0.2s linear, transform 0.3s ease-out 0.2s
       &:hover
         > .detail
           opacity 0.8
           > .title
             opacity 1
-            transform translate(0, 0)
-            j
+            transform perspective(1400px) rotateX(0deg)
 
+
+/*
 @media all and (min-width: 1px) and (max-width: 1000px)
   .page.work > .tiles > .tile > .detail
-      opacity 1
-      background-color: rgba(c.white1, 0)
+      opacity 0.5 
       > .title
         opacity 1
         line-height 40vw
+        transform perspective(1400px) rotateX(0deg)
+*/
 
 @media all and (min-width: 1px) and (max-width: 481px)
   .page.work > .tiles > .tile
