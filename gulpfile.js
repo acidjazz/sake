@@ -1,6 +1,5 @@
 
 var gulp = require('gulp');
-
 var sync = require('browser-sync').create();
 
 var notify = require('gulp-notify');
@@ -25,7 +24,7 @@ objectus('dat/', function(error, result) {
   if (error) {
     notify(error);
   }
-  data = result
+  data = result;
 });
 
 gulp.task('objectus', function() {
@@ -48,7 +47,7 @@ gulp.task('vendors', function() {
   .pipe(uglify())
   .pipe(concat('vendor.min.js'))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('pub/jst/lib'))
+  .pipe(gulp.dest('pub/jst/lib'));
 
 });
 

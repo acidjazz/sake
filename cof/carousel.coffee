@@ -5,7 +5,6 @@ Carousel =
   slides: 3
 
   i: ->
-
     Carousel.handlers()
     Carousel.slide 1
     _.off '.loader'
@@ -42,4 +41,3 @@ Carousel =
     _.off '.carousel > .nav > .dots > .dot'
     _.on ".slides > .slide.slide#{Carousel.sliden}"
     _.on ".carousel > .nav > .dots > .dot#{Carousel.sliden}"
-
