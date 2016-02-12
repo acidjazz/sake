@@ -8,7 +8,7 @@
     > .tile
       display inline-block
       width 32.0vw
-      height 32.0vw
+      height 16.0vw
       position relative
       animation cellInX 0.2s 0.25s ease-in both
       for num in 0..10
@@ -18,35 +18,37 @@
         width 95%
         height 95%
         margin 0 2.5% 0 2.5%
-        background-size cover
+        background-size 100%
         background-position 50% 50%
         background-repeat no-repeat
-        transition background-size 1s linear
-      > .detail
+        transition background-size 2s linear
+      > .white
         position absolute
-        width 95%
-        height 95%
-        margin 0 2.5% 0 2.5%
+        width 100%
+        height 100%
         opacity 0
         background-color: c.white1
-        background-image url(/img/pattern.jpg)
-        transition opacity 0.2s linear
-        > .title
-          opacity 0
-          font: f.copy5
-          letter-spacing 2px
-          text-align center
-          line-height 33.33vw
-          text-transform uppercase
-          transform-origin middle
-          transform perspective(1400px) rotateX(90deg)
-          transition opacity 0.2s linear, transform 0.3s ease-out 0.2s
+      > .title
+        position absolute
+        width 100%
+        height 100%
+        opacity 0
+        font: f.h2
+        letter-spacing 2px
+        text-align center
+        line-height 16vw
+        text-transform uppercase
+        transform-origin middle
+        transform perspective(1400px) rotateX(90deg)
+        transition opacity 0.2s linear, transform 0.3s ease-out 0.2s
       &:hover
-        > .detail
-          opacity 0.8
-          > .title
-            opacity 1
-            transform perspective(1400px) rotateX(0deg)
+        > .inner
+          background-size 200%
+        > .white
+          opacity 0.5
+        > .title
+          opacity 1
+          transform perspective(1400px) rotateX(0deg)
 
 
 /*
@@ -60,13 +62,20 @@
 */
 
 @media all and (min-width: 1px) and (max-width: 481px)
-  .page.work > .tiles > .tile
-    width 100vw
-    height 100vw
+  .page.work > .tiles
+    margin 0
+    > .tile
+      width 100vw
+      height 49vw
+      > .title
+        line-height 49vw
  
 
 @media all and (min-width: 482px) and (max-width: 1000px)
-  .page.work > .tiles > .tile
-    width 50vw
-    height 50vw
-
+  .page.work > .tiles
+    margin 0
+    > .tile
+      width 50vw
+      height 24.5vw
+      > .title
+        line-height 24.5vw
