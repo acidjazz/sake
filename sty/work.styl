@@ -3,29 +3,30 @@
 
   > .tiles
     text-align center
+    margin 0 1.2vw
 
     > .tile
       display inline-block
-      width 32.6vw
-      height 32.6vw
+      width 32.0vw
+      height 32.0vw
       position relative
       animation cellInX 0.2s 0.25s ease-in both
       for num in 0..10
         &:nth-child({num})
           animation-delay unit(0.25 + ( num*0.1 ), 's')
       > .inner
-        margin 5%
-        width 90%
-        height 90%
-        background-size 200%
+        width 95%
+        height 95%
+        margin 0 2.5% 0 2.5%
+        background-size cover
         background-position 50% 50%
         background-repeat no-repeat
         transition background-size 1s linear
       > .detail
         position absolute
-        width 90%
-        height 90%
-        margin 5%
+        width 95%
+        height 95%
+        margin 0 2.5% 0 2.5%
         opacity 0
         background-color: c.white1
         background-image url(/img/pattern.jpg)
