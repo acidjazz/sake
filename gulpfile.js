@@ -33,7 +33,7 @@ gulp.task('objectus', function() {
     if (error) {
       notify(error);
     }
-    
+
     data = result;
 
   });
@@ -148,7 +148,7 @@ function mogrify(data) {
 
       for (var i = 0, l = sizes.length; i < l; i++) {
 
-        if (dirname.match(sizes[i]) != null) {
+        if (dirname.match(sizes[i]) !== null) {
           gutil.log(gutil.colors.red('Image size matched in dir name, aborting'), dirname);
           return true;
         }
@@ -173,7 +173,7 @@ function mogrify(data) {
   }
 
   gulp.start('mogrify:start');
-  return true
+  return true;
 
 }
 
