@@ -77,9 +77,27 @@
       width 50%
     > .left
       float left
+      > img
+        width 100%
     > .right
       float right
       > .inner
         > p
           font: f.copy2
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .page.studio
+    > .processes
+      > .section
+        width 100%
+        float none
+    > .behind
+      > .left, > .right
+        width 100%
+        float none
+      > .left
+        text-align center
+    > .services
+      > .section
+        float none
+        width 100%
