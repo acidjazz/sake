@@ -10,7 +10,6 @@ Spa =
     contact: '/contact/'
 
   i: ->
-    console.log 'Spa.i()'
     Spa.handlers()
 
     Spa.page = Spa.original = location.pathname
@@ -55,7 +54,7 @@ Spa =
       Spa.push()
 
   submenuHandler: (e) ->
-    
+
     e.preventDefault()
 
     page = $(this).attr 'href'

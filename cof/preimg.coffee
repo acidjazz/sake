@@ -17,15 +17,6 @@ Preimg = (html, progress, complete) ->
       image = attr.substr 5, attr.length-7
       urls.push image if image isnt ''
 
-    ###
-    else
-      imgRegex = new RegExp('<img.*?src="(.*?\/([^/"]*))".*?>', 'g')
-      results = imgRegex.exec html
-      while results isnt null
-        results = imgRegex.exec html
-        urls.push results[1] if results isnt null
-    ###
-    #
    load = ->
 
      loaded = 0
@@ -34,7 +25,6 @@ Preimg = (html, progress, complete) ->
      if loaded is total then complete(true)
 
      images = []
-
 
      for url, i in urls
        images[i] = new Image()
