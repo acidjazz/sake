@@ -1,4 +1,10 @@
 ---
-  - volition.jpg
-  - daffodil.jpg
-  - destilado.jpg
+-
+  image: volition.jpg
+  link: /work/volition
+-
+  image: daffodil.jpg
+  link: /work/daffodil
+-
+  image: destilado.jpg
+  link: /work/destilado
