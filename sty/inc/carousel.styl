@@ -10,7 +10,10 @@
     height 100%
     background-color: c.black1
     transition opacity 1s linear
-    onoff()
+    &.on
+      opacity 1 
+    &.off
+      opacity 0
 
   > .slides
     > .slide

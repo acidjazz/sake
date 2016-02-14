@@ -1,6 +1,5 @@
 
 .page.work
-
   > .tiles
     text-align center
     margin 0 1.2vw
@@ -11,6 +10,7 @@
       height 16.0vw
       position relative
       animation cellInX 0.2s 0.25s ease-in both
+      overflow hidden
       for num in 0..10
         &:nth-child({num})
           animation-delay unit(0.25 + ( num*0.1 ), 's')
