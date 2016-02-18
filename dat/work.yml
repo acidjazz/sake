@@ -3,21 +3,24 @@ batch:
   folder: batch
   images: 5
   title: Batch and Batter
+  meta: BATCH & BATTER Artisan waffle ice-cream sandwiches made with organic ingredients and available by food truck throughout San Francisco, California.
   description: |
-    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity. 
-    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+    Batch & Batter creates artisan waffle ice cream sandwiches using locally sourced, organic ingredients. Each sandwich is made with two scoops of small batch ice cream ranging in a variety of unique flavors and sandwiched between freshly made waffles. And the best part: these sandwiches are made to order in a food truck that makes appearances all over San Francisco.
+    The goals in creating Batch & Batter’s identity and product packaging were to highlight the transparency of ingredients, the artisan quality behind their sandwiches, and lastly, delivering a nostalgic experience similar to that of being a child ordering from an ice cream truck.
   services:
     - brand identity
     - logo design
+    - packaging design
     - art direction
 
 daffodil:
   folder: daffodil
   images: 6
   title: Daffodil Digital
+  meta: DAFFODIL DIGITAL, Social and digital marketing agency helping brands tell their stories in smarter ways.
   description: |
     Daffodil Digital is a new social and digital marketing agency helping brands tell their stories in smarter ways.
-    Designsake Studio was brought on board to create a brand that was fresh and approachable. Using bright colors, custom illustrations, and imagery we created a design that makes strategic storytelling in the digital space not only inspiring but authentic. Stop and smell the Daffodils.
+    Designsake Studio was brought on board to create a brand that was fresh and approachable. Using bright colors, custom illustrations and imagery, we created a design that makes strategic storytelling in the digital space not only inspiring, but authentic. Stop and smell the Daffodils.
   services:
     - brand identity
     - logo design
@@ -29,36 +32,40 @@ volition:
   folder: volition
   images: 6
   title: Volition Beauty
+  meta: VOLITION BEAUTY, Innovative beauty company leading the industry in radical transparency
   description: |
-    Volition is an innovative brand out to change the beauty industry. Unlike traditional companies, Volition was born out of the idea that customers have the right to drive product decisions while knowing what is in their products, how much it costs to make them, and where they are made. All product ideas and decisions are entirely crowd sourced.
+    Volition is an innovative company out to change the beauty industry. Unlike traditional brands in beauty, Volition was born out of the idea that customers have the right to drive product decisions while knowing what is in their products, how much it costs to make them, and where they are made. All products are innovated and created by members of the community.
     In branding Volition Beauty, Designsake Studio developed the logo, patterns, icons, website, and product packaging with the intent of highlighting the company's core values of transparency, prestige quality, innovation, and community.
-
   services:
     - brand identity
     - logo design
+    - packaging design
     - art direction
-    - photography
     - website design
+
 destilado:
   folder: destilado
   images: 6
   title: El Destilado
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ante vulputate, mollis justo ut, consectetur orci. Pellentesque porttitor odio eu pulvinar ornare. Ut ac mi vitae ex elementum iaculis eu ac velit. Suspendisse porttitor quam sit amet mi volutpat, nec interdum nulla facilisis. Donec ac nisl vitae massa malesuada facilisis. Mauris pulvinar malesuada mi, at lobortis massa rhoncus id. Quisque vehicula dolor quis egestas consequat. Quisque ullamcorper dignissim elit sit amet gravida. Etiam in mauris eget tellus venenatis porttitor.
+  meta: EL DESTILADO , Intimate eatery offering fresh, local fare and creative cocktails in the center of Oaxaca, Mexico
+  description: |
+    El Destilado is a new restaurant offering high quality food and creative cocktails in the center of downtown Oaxaca, Mexico.
+    A café by day, and speak easy mezcalería by night, El Destilado offers an intimate and cultural dinning experience. In developing El Destilado’s identity we drew inspiration from the areas rich history of arts and culinary traditions. We create a logo that highlighted the restaurants custom copper distillery used to make there 15 plus varietals of Mezcal, We also used a color palette that compliments the restaurants tile details, rich wood tables, and mural covered walls.
   services:
     - brand identity
     - logo design
     - art direction
-    - photography
-    - website design
+
 benefit:
   folder: benefit
   images: 6
   title: Benefit Cosmetics
+  meta: BENEFIT COSMETICS, Established cosmetics company famous for their bold and girly aesthetic.
   description: |
-    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity.
-    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to shape the company's identity.
+    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or retail spaces. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company.
   services:
-    - brand identity
+    - packaging design
     - logo design
     - art direction
 
@@ -66,32 +73,36 @@ goldpr:
   folder: goldpr
   images: 6
   title: Gold PR
+  meta: GOLD PR & SOCIAL MEDIA, Boutique PR and Social Media Marketing agency
   description: |
-    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity.
-    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+    GOLD PR is a boutique public relations and social media marketing agency. Over the last 10 this brand has supported numerous companies with their launch and social strategies in industries like consumer products, health, beauty, medical technology, food and beverage.
+    The company came to Designsake Studio asking for a complete brand redesign. We worked with Gold PR & Social Media to revamp their logo, website, and printed collateral. The vibrant color palette and simplistic typography coupled with custom photography provided the fresh and feminine facelift this boutique agency needed.
   services:
     - brand identity
     - logo design
     - art direction
+    - website design
+    - website development
 
 sephora:
   folder: sephora
   images: 5
   title: Sephora
+  meta: SEPHORA, International cosmetic brand and retailer
   description: |
-    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity.
-    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+    The Sephora Collection is known for it’s extensive makeup, tools, brushes and skin care products designed to help customers experiment, express and explore.
+    Featured here are a few printed pieces we have designed for the Sephora Collection team.
   services:
-    - brand identity
-    - logo design
     - art direction
-ayla:
-  folder: ayla
-  images: 1
-  title: Ayla Beauty
+    - print collateral
+
+enchantment:
+  folder: enchantment
+  images: 4
+  title: Enchantment Farm
+  meta: ENCHANTMENT FARM , Working horse ranch located in Temecula, California
   description: |
-    Benefit Cosmetics has famed the bold and girly persona in the cosmetics industry. After 30 plus years of business, Benefit has developed a visually rich history that continues to contribute to the company's identity.
-    As a brand they continue to experiment with color, patterns, and type everywhere they can, whether it be in their packaging or their boutiques. All the while staying true to the brand’s unique DNA. Featured here are samples of product packaging and marketing collateral created for the company
+    Enchantment Farm is a new fourteen-acre horse ranch located on the prestigious De Portola Road in Temecula, California. The owner has been involved in competitive riding since she was a child and has now fulfilled a lifelong dreamed of owning her own ranch. Designsake Studio developed a logo for the ranch inspired by vintage fairytale books. The warm color palette of grays and greens highlights the ranches natural landscape and complements the modern typography. Hints of metallic ink add a touch of sophistication and nod to the ranches award winning horses.
   services:
     - brand identity
     - logo design

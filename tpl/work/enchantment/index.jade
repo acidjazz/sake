@@ -3,7 +3,7 @@ extends ../../inc/layout
 
 block meta
   -
-    var client = 'ayla';
+    var client = 'enchantment';
     var current = data.work[client];
     var meta = {
       title: current.title + ' - ' + data.meta.title, 
@@ -13,5 +13,5 @@ block meta
     };
 
 block content
-  - var current = data.work.ayla;
+  - var current = data.work.enchantment;
   include ../_detail

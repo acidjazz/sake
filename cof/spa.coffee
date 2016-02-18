@@ -4,13 +4,15 @@ Spa =
   instagram: false
   original: null
   page: null
+  cache:
+    window: window
+    stickied: false
   options:
     work: '/work/'
     studio: '/studio/'
     contact: '/contact/'
 
   i: ->
-    Spa.handlers()
 
     Spa.page = Spa.original = location.pathname
     Spa.activate Spa.page
@@ -26,6 +28,27 @@ Spa =
         _.on '#container > #inner'
       , 1000
 
+    Spa.cache.window = $(window)
+
+    Spa.handlers()
+
+    setInterval Spa.header, 20
+
+  header: ->
+
+    if Spa.cache.window.scrollTop() > 400 and Spa.cache.stickied is false
+      _.on 'header.sticky'
+      _.off 'header.normal'
+      $('#container').addClass 'sticky'
+
+      Spa.cache.stickied = true
+
+    if Spa.cache.window.scrollTop() < 400 and Spa.cache.stickied is true
+      _.off 'header.sticky'
+      _.on 'header.normal'
+      $('#container').removeClass 'sticky'
+      Spa.cache.stickied = false
+
   handlers: ->
 
     # main menu
@@ -39,7 +62,6 @@ Spa =
 
     # work sub menu
     $('#container').on 'click', '.page.detail > .submenu > a', Spa.submenuHandler
-
 
   tileHandler: (e) ->
 
