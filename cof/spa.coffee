@@ -32,7 +32,8 @@ Spa =
 
     Spa.handlers()
 
-    setInterval Spa.header, 20
+    if !Loader.mobile && !Loader.iPad
+      setInterval Spa.header, 20
 
   header: ->
 
