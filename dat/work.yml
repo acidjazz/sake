@@ -1,32 +1,4 @@
 ---
-batch:
-  folder: batch
-  images: 5
-  title: Batch and Batter
-  meta: BATCH & BATTER Artisan waffle ice-cream sandwiches made with organic ingredients and available by food truck throughout San Francisco, California.
-  description: |
-    Batch & Batter creates artisan waffle ice cream sandwiches using locally sourced, organic ingredients. Each sandwich is made with two scoops of small batch ice cream ranging in a variety of unique flavors and sandwiched between freshly made waffles. And the best part: these sandwiches are made to order in a food truck that makes appearances all over San Francisco.
-    The goals in creating Batch & Batter’s identity and product packaging were to highlight the transparency of ingredients, the artisan quality behind their sandwiches, and lastly, delivering a nostalgic experience similar to that of being a child ordering from an ice cream truck.
-  services:
-    - brand identity
-    - logo design
-    - packaging design
-    - art direction
-
-daffodil:
-  folder: daffodil
-  images: 6
-  title: Daffodil Digital
-  meta: DAFFODIL DIGITAL, Social and digital marketing agency helping brands tell their stories in smarter ways.
-  description: |
-    Daffodil Digital is a new social and digital marketing agency helping brands tell their stories in smarter ways.
-    Designsake Studio was brought on board to create a brand that was fresh and approachable. Using bright colors, custom illustrations and imagery, we created a design that makes strategic storytelling in the digital space not only inspiring, but authentic. Stop and smell the Daffodils.
-  services:
-    - brand identity
-    - logo design
-    - art direction
-    - photography
-    - website design
 
 volition:
   folder: volition
@@ -43,6 +15,21 @@ volition:
     - art direction
     - website design
 
+daffodil:
+  folder: daffodil
+  images: 6
+  title: Daffodil Digital
+  meta: DAFFODIL DIGITAL, Social and digital marketing agency helping brands tell their stories in smarter ways.
+  description: |
+    Daffodil Digital is a new social and digital marketing agency helping brands tell their stories in smarter ways.
+    Designsake Studio was brought on board to create a brand that was fresh and approachable. Using bright colors, custom illustrations and imagery, we created a design that makes strategic storytelling in the digital space not only inspiring, but authentic. Stop and smell the Daffodils.
+  services:
+    - brand identity
+    - logo design
+    - art direction
+    - photography
+    - website design
+
 destilado:
   folder: destilado
   images: 6
@@ -54,6 +41,20 @@ destilado:
   services:
     - brand identity
     - logo design
+    - art direction
+
+batch:
+  folder: batch
+  images: 5
+  title: Batch and Batter
+  meta: BATCH & BATTER Artisan waffle ice-cream sandwiches made with organic ingredients and available by food truck throughout San Francisco, California.
+  description: |
+    Batch & Batter creates artisan waffle ice cream sandwiches using locally sourced, organic ingredients. Each sandwich is made with two scoops of small batch ice cream ranging in a variety of unique flavors and sandwiched between freshly made waffles. And the best part: these sandwiches are made to order in a food truck that makes appearances all over San Francisco.
+    The goals in creating Batch & Batter’s identity and product packaging were to highlight the transparency of ingredients, the artisan quality behind their sandwiches, and lastly, delivering a nostalgic experience similar to that of being a child ordering from an ice cream truck.
+  services:
+    - brand identity
+    - logo design
+    - packaging design
     - art direction
 
 benefit:

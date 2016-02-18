@@ -2,6 +2,27 @@ extends ../inc/layout
 
 block content
 
-  .page.contact.uc contact page - under construction
+  .page.contact
 
+    .title get in touch
+    .sbar
 
+    .detail
+      .left
+        .studio
+      .right
+        .section
+          .title the studio
+          a.copy(href=data.social.map,target='_blank')
+            p 295 Kansas Street<br /> San Francisco, CA 94122
+          .sbar
+        .section
+          .title inquiries
+          a.copy(href='mailto:' + data.social.mail, target='_blank')
+            p info@designsakestudio.com
+          .sbar
+        .section
+          .title chat
+          a.copy(href='tel:' + data.social.phone)
+            p=data.social.phone
+      .clear
