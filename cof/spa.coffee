@@ -32,7 +32,7 @@ Spa =
 
     Spa.handlers()
 
-    if !Loader.mobile && !Loader.iPad
+    if $(window).width() > 1000
       setInterval Spa.header, 20
 
   header: ->
