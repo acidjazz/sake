@@ -13,7 +13,7 @@ Preimg = (html, progress, complete) ->
 
     $(html).find('div, a').map ->
       attr = $(this).css('backgroundImage')
-      return true if attr.length is 0
+      return true if attr.length is 0 or attr is 'none'
       image = attr.substr 5, attr.length-7
       urls.push image if image isnt ''
 
@@ -29,7 +29,8 @@ Preimg = (html, progress, complete) ->
      for url, i in urls
        images[i] = new Image()
        images[i].src = url
-       images[i].onload = ->
+       images[i].onload = (e) ->
+         console.log e
          loaded++
          perc = Math.round(loaded/total*100)/100
          if loaded is total then complete(true) else progress(perc)

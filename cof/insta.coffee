@@ -1,9 +1,8 @@
 
 Insta =
   endpoint: 'https://api.instagram.com/v1/users/self/media/recent/'
-  token: '264367793.55cd6c3.ae227ede2f5c48eaab95ca57ffc4c0f6'
   token: '1709913627.87976c3.0415bd97d8104df3af8110e57d5f1349'
-  posts: 4
+  posts: 5
   loaded: false
 
   i: ->
