@@ -31,7 +31,8 @@
     margin auto
     > .section
       float left
-      width 25%
+      width 50%
+      height 200px
       > .inner
         padding 20px 30px
         > .title
@@ -84,10 +85,11 @@
     > .right
       float right
       > .inner
-        padding 0 20px
+        padding 0 20px 0 20px
         > p
           font: f.copy2
-          marign 0px
+          margin 0px
+          padding 0 0 20px 0
           line-height 30px
 
 @media all and (min-width: 1px) and (max-width: 1000px)
@@ -95,11 +97,17 @@
     > .processes
       > .section
         width 100%
+        height auto
         float none
     > .behind
       > .left, > .right
         width 100%
         float none
+        > .inner
+          padding 0
+          > p
+            margin 0px
+            padding 10px 0
       > .left
         text-align center
     > .services
