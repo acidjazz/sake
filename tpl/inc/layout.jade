@@ -26,7 +26,8 @@ html(lang='en')
     script(type='application/ld+json').
       {
         "@context": "http://schema.org",
-        "@type": "Organization",
+        "@type": "Place",
+        "founder": "Danielle McWaters",
         "url": "#{data.meta.url}",
         "logo": "#{data.meta.url}#{data.meta.image}",
         "telephone": "+1#{data.social.phone}",
@@ -38,29 +39,10 @@ html(lang='en')
           "postalCode": "94122",
           "addressCountry": "US"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 37.7664616,
-          "longitude": -122.4056994
-        },
         "sameAs" : [
           "#{data.social.instagram}",
           "#{data.social.facebook}",
           "#{data.social.pinterest}"
-        ],
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "00:00",
-            "closes": "23:59"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Sunday",
-            "opens": "00:00",
-            "closes": "00:00"
-          }
         ]
       }
 
