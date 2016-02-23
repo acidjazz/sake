@@ -7,7 +7,6 @@ Insta =
 
   i: ->
 
-    console.log 'Insta.i()'
     if Insta.loaded isnt true
       Insta.load()
 
@@ -17,7 +16,6 @@ Insta =
 
   callback: (json) ->
     for post, index in json.data
-      console.log index, post
       return true if index is Insta.posts
       $('.instagram > .posts').append """
 

@@ -30,7 +30,6 @@ Preimg = (html, progress, complete) ->
        images[i] = new Image()
        images[i].src = url
        images[i].onload = (e) ->
-         console.log e
          loaded++
          perc = Math.round(loaded/total*100)/100
          if loaded is total then complete(true) else progress(perc)

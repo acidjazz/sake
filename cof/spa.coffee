@@ -18,7 +18,6 @@ Spa =
     Spa.activate Spa.page
 
     Preimg $('#container > #inner'), (complete) ->
-      console.log "#{complete*100}%"
       $('.spinner > .complete').css 'height', "#{complete*100}%"
     , (done) ->
       $('.spinner > .complete').css 'height', '100%'
