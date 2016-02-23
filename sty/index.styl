@@ -1,8 +1,16 @@
 .page.home
-  > .copy
-    font: f.copy1
-    max-width 640px
-    margin auto
+  > .intro
+    padding 50px 0
+    text-align center
+    > .copy
+      font: f.copy1
+      max-width 700px
+      margin auto
+      letter-spacing 1px
+    > .arrows
+      width 600px
+      height 40px
+      margin 20px auto
   > .instagram
     > .title
       font: f.copy1
@@ -39,11 +47,12 @@
             line-height 20vw
             transform perspective(1400px) rotateX(90deg)
             transition opacity 0.2s linear, transform 0.3s ease-out 0.2s
-          &:hover
+          /*&:hover
             opacity 0.8
             > .likes
               opacity 1
               transform perspective(1400px) rotateX(0deg)
+          */
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .page.home

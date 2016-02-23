@@ -16,13 +16,15 @@ block content
           each val in [1,2,3]
             .dot.off(class='dot' + val,data-dot=val)
 
-    .arrows
-      include ../pub/svg/arrows.svg
+    .intro
+      .arrows
+        include ../pub/svg/arrows.svg
 
-    .copy We are a full service creative studio that specializes in branding, packaging, and art direction.
-    .copy We work with our clients to elevate their brand by developing strategies and solutions to transform big ideas into stand out design.
-    .arrows
-      include ../pub/svg/arrows.svg
+      .copy We are a full service creative studio that specializes in branding, packaging, and art direction.
+      br
+      .copy We work with our clients to elevate their brand by developing strategies and solutions to transform big ideas into stand out design.
+      .arrows
+        include ../pub/svg/arrows.svg
 
     .instagram
       .title instagram
