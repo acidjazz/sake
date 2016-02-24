@@ -14,7 +14,7 @@ Preimg = (html, progress, complete) ->
     $(html).find('div, a').map ->
       attr = $(this).css('backgroundImage')
       return true if attr.length is 0 or attr is 'none'
-      image = attr.substr 5, attr.length-7
+      image = attr.replace('url(', '').replace(')', '')
       urls.push image if image isnt ''
 
    load = ->
