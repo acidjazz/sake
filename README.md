@@ -3,5 +3,5 @@
 
 Full service boutique design studio.
 
-<img src="pub/img/share.jpg">
+<img src="http://i.imgur.com/RjqZB5X.png">
 
