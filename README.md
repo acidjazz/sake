@@ -1,7 +1,7 @@
 
 # Design Sake Studio
 
-Full service boutique design studio.
+Boutique design studio that specializes in branding, packaging, web design, and development
 
 <img src="http://i.imgur.com/RjqZB5X.png">
 
