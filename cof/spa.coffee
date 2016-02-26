@@ -96,12 +96,18 @@ Spa =
     e.preventDefault()
 
     page = $(this).data 'page'
+    option = $(this).data 'option'
 
     return true if page is undefined
     return true if page is location.pathname
 
-    Spa.load page, '#inner', '#container > #inner', ->
-      Spa.push()
+    _.off 'header > .inner > .menu > ul > li > a'
+    _.on "header > .inner > .menu > ul > li > a.option_#{option}"
+
+    setTimeout ->
+      Spa.load page, '#inner', '#container > #inner', ->
+        Spa.push()
+    , 400
 
   activate: ->
     _.off 'header > .inner > .menu > ul > li > a'
@@ -127,7 +133,6 @@ Spa =
             _.on '#container > #inner'
             Spa.page = page
             cb?()
-            Spa.activate()
           , 1000
 
   push: ->
