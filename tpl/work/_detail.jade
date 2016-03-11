@@ -11,6 +11,9 @@
   .details
     .section.desc
       .title=current.title
+        if current.link
+          a.link(href=current.link,target='_blank')
+            include ../../pub/svg/link.svg
       - var descs = current.description.split("\n");
       .desc
         each desc in descs
