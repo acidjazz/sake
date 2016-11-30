@@ -1,0 +1,27 @@
+.inner
+  a.logo(href='/',data-page='/')
+    .vector
+      include ../../vector/logo1.svg
+    .tagline
+      .tag branding
+      .tag.bar  
+      .tag packaging
+      .tag.bar
+      .tag direction
+
+  .logob
+    include ../../vector/logo3.svg
+  .clear
+  .menu
+    ul
+      li: a.option_work.off(href='/work/',data-page='/work/',data-option='work')
+        .bar
+        .copy work
+      li: a.option_studio.off(href='/studio/', data-page='/studio/',data-option='studio')
+        .bar
+        .copy studio
+      li: a.option_contact.off(href='/contact/', data-page='/contact/',data-option='contact')
+        .bar
+        .copy contact
+
+  .clear

@@ -1,0 +1,18 @@
+
+extends ../extend/layout
+
+block content
+  .guide
+
+    .sections
+
+      .section.colors
+        .title Colors
+        each color, name in config.colors
+          .color(class='color_'+name) #{name} (#{color})
+
+      .section.fonts
+        .title Fonts
+        each font, name in config.fonts
+          .font(class='font_' + name) #{name}: #{font}
+ 
