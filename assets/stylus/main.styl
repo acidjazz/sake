@@ -1,3 +1,6 @@
+@import 'guide/*'
+@import 'guide/includes/*'
+
 body, html
   margin 0
   padding 0
@@ -11,3 +14,56 @@ body, html
     clear: both
   zoom: 1 if support-for-ie
 
+body
+  background-color white1
+  font-copy1()
+  padding 50px 10px 0 10px
+  margin 0 10px 0 10px
+  &.off
+    overflow hidden
+    position fixed
+    overflow-scrolling touch
+
+  &.on
+    overflow scroll
+
+.burger
+  display none
+
+.container
+  width 1168px
+  margin auto
+  min-height 200px
+  position relative
+
+.page
+  min-height 200px
+  margin 0 0 0 90px
+
+.title
+  gf(h2)
+  text-transform uppercase
+  color gc(blue1)
+  margin 0 0 60px 0
+
+.subtitle
+  gf(h3)
+
+a
+  text-decoration none
+  position relative
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .burger
+    display block
+  body
+    padding 0
+    margin 0
+  .container
+    width auto
+    margin 20px
+  .page
+    margin 0
+  .title
+    gf(h3)
+    margin 0 0 20px 0

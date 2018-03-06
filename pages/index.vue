@@ -1,6 +1,54 @@
 <template lang="pug">
-  .page.page-index
-    .copy home page
+  .page.home
+
+    .title .Forging a unique path with clarity and character.
+    .tiles
+
+      a(href='/work/fullsun').tile.tile_fullsun.tile_left
+        .image.off
+        .hover
+          .title .full sun.
+
+      a(href='/work/eldestilado').tile.tile_eldestilado
+        .image.off
+        .hover
+          .title .el destilado.
+
+      a(href='/work/sufferfest').tile.tile_sufferfest.tile_full
+        .image.off
+        .hover
+          .title .sufferfest.
+
+      //a(href='/work/sumi').tile.tile_sumi
+        .image.off
+        .hover
+          .title .sumi.
+
+      a(href='/work/brown').tile.tile_brownestate.tile_full
+        .image.off
+        .hover
+          .title .brown estate.
+
+      a(href='/work/vie').tile.tile_viehealing.tile_left
+        .image.off
+        .hover
+          .title .vie healing.
+
+      a(href='/work/fjordlife').tile.tile_fjordlife
+        .image.off
+        .hover
+          .title .fjordlife.
+
+      a(href='/work/benefitcosmetics').tile.tile_benefit.tile_left
+        .image.off
+        .hover
+          .title .benefit cosmetics.
+
+      a(href='/work/urbankitchen').tile.tile_urbankitchen
+        .image.off
+        .hover
+          .title .urban kitchen.
+      .clear
 </template>
 
 <script>
@@ -8,6 +56,155 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
+@import '../assets/stylus/guide/includes/*'
+.page.home
+  > .tiles
+    > .tile
+      display block
+      position relative
+      float left
+      overflow hidden
+      background-size cover
+      > .image
+        background-color rgba(blue1, 0.5)
+        background-size contain
+        width inherit
+        height inherit
+        onoff()
+        animation fadeIn 0.25s ease-in-out 0s
+      > .hover
+        position absolute
+        top 0
+        left 0
+        background-color rgba(blue1, 0.5)
+        width 100%
+        height 100%
+        opacity 0
+        transition opacity 0.2s linear
+        > .title
+          position absolute
+          font-h2()
+          top 50%
+          opacity 0
+          width 100%
+          height 24px
+          margin-top -12px
+          text-align center
+          color white1
+          letter-spacing 4px
+          transition all 0.2s linear 0.1s
+          transform scale(1.05)
+          text-transform uppercase
+      &:hover 
+        > .image
+        > .hover
+          opacity 1
+          > .title
+            opacity 1
+            transform scale(1)
+
+      &.tile_left
+        margin 0 30px 30px 0
+      &.tile_full
+        margin 0 0 30px 0
+
+      &.tile_fullsun
+        width 626px
+        height 444px
+        background-image url('/images/tiles/home/thumbs/FullSun_626x444px_1.jpg')
+        > .image
+          background-image url('/images/tiles/home/FullSun_626x444px_1.jpg')
+      &.tile_eldestilado 
+          width 422px
+          height 444px
+          background-image url('/images/tiles/home/thumbs/ElDestilado_422x444px_2.jpg')
+          > .image
+            background-image url('/images/tiles/home/ElDestilado_422x444px_2.jpg')
+
+      &.tile_sufferfest 
+        width 1078px
+        height 365px
+        background-image url('/images/tiles/home/thumbs/Sufferfest_1078x305px.jpg')
+        > .image
+          background-image url('/images/tiles/home/Sufferfest_1078x305px.jpg')
+      &.tile_sumi
+        width 542px
+        height 365px
+        background-image url('/images/tiles/home/thumbs/Sumi_542x365px_4.jpg')
+        > .image
+          background-image url('/images/tiles/home/Sumi_542x365px_4.jpg')
+      &.tile_brownestate
+        width 1078px
+        height 625px
+        background-image url('/images/tiles/home/thumbs/BrownEstate_1078x625px_5.jpg')
+        > .image
+          background-image url('/images/tiles/home/BrownEstate_1078x625px_5.jpg')
+
+      &.tile_viehealing
+        width 674px
+        height 625px
+        background-image url('/images/tiles/home/thumbs/VieHealing_674x625px_6.jpg')
+        > .image
+          background-image url('/images/tiles/home/VieHealing_674x625px_6.jpg')
+
+      &.tile_fjordlife
+        width 374px
+        height 624px
+        background-image url('/images/tiles/home/thumbs/Fjordlife_374x624px_7.jpg')
+        > .image
+          background-image url('/images/tiles/home/Fjordlife_374x624px_7.jpg')
+
+      &.tile_benefit
+        width 506px
+        height 365px
+        background-image url('/images/tiles/home/thumbs/Benefit_506x365px_8.jpg')
+        > .image
+          background-image url('/images/tiles/home/Benefit_506x365px_8.jpg')
+
+      &.tile_urbankitchen
+        width 542px
+        height 365px
+        background-image url('/images/tiles/home/thumbs/UrbanKitchen_542x365px_9.jpg')
+        > .image
+          background-image url('/images/tiles/home/UrbanKitchen_542x365px_9.jpg')
+.home_connect
+  display none
+
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .page.home > .title
+    font-size 7px
+  .tiles
+    > .tile
+      width 100% !important
+      background-size cover !important
+      height 300px !important
+      margin 0 0 20px 0 !important
+      background-position center
+      > .image
+        background-size cover !important
+        background-position center
+
+
+  .home_connect
+    display block
+    > .contact
+      float none
+    > .copy1, > .copyright
+      text-transform uppercase
+      padding 10px 0 0 0
+      font-copy2()
+      color grey1
+    > .copyright
+      bottom 30px
+      font-copy2s()
+    > .socials
+      display block
+      > .social
+        float left
+
+
+
 </style>
 
