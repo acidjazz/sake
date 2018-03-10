@@ -55,6 +55,9 @@ module.exports = {
   ** Build configuration
   */
   css: [{ src: '~assets/stylus/main.styl', lang: 'stylus' }],
+  modules: [
+    'nuxt-coffee',
+  ],
   build: {
     /*
     ** Run ESLint on save
@@ -65,7 +68,7 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
     }

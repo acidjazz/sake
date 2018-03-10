@@ -1,0 +1,109 @@
+{
+	"folder": "vie",
+	"title": "vie healing",
+	"description": [
+		"A holistic healing approach that brings harmony to the mind, body, and spirit.",
+		"The identity and packaging draws on organic colors and textures found in loose leaf teas and herbal supplements. Bold typography, tone on tone layering, and delicate lines of gold foil evoke a new sophistication to home remedies for everyday healing. <a href=\"https://www.viehealing.com/\">www.viehealing.com</a>"
+	],
+	"services": [
+		"strategy",
+		"brand identity",
+		"packaging",
+		"print",
+		"product development",
+		"Website Design + Development",
+		"Photography"
+	],
+	"prev": {
+		"name": "brown estate",
+		"folder": "brown"
+	},
+	"next": {
+		"name": "fjordlife",
+		"folder": "fjordlife"
+	},
+	"tiles": [
+		{
+			"image": "Vie_1079x537px_1.jpg",
+			"width": 1079,
+			"height": 537,
+			"full": true
+		},
+		{
+			"image": "Vie_684x525px_2.jpg",
+			"width": 684,
+			"height": 525,
+			"left": true
+		},
+		{
+			"image": "Vie_364x525px_3.jpg",
+			"width": 364,
+			"height": 525
+		},
+		{
+			"image": "Vie_512x453px_4.jpg",
+			"left": true,
+			"width": 512,
+			"height": 453
+		},
+		{
+			"image": "Vie_536x453px_5.jpg",
+			"width": 536,
+			"height": 453
+		},
+		{
+			"image": "Vie_1079x537px_6.jpg",
+			"full": true,
+			"width": 1079,
+			"height": 537
+		},
+		{
+			"image": "Vie_683x626px_7.jpg",
+			"width": 683,
+			"height": 626
+		},
+		{
+			"image": "Vie_366x208px_8.jpg",
+			"width": 366,
+			"height": 208,
+			"right": true
+		},
+		{
+			"image": "Vie_366x387px_9.jpg",
+			"width": 366,
+			"height": 387,
+			"right": true
+		},
+		{
+			"image": "Vie_364x525px_10.jpg",
+			"width": 364,
+			"height": 525,
+			"clear": true,
+			"left": true
+		},
+		{
+			"image": "Vie_684x525px_11.jpg",
+			"width": 684,
+			"height": 525,
+			"full": true
+		},
+		{
+			"image": "Vie_1079x537px_12.jpg",
+			"width": 1079,
+			"height": 537,
+			"full": true
+		},
+		{
+			"image": "Vie_364x626px_13.jpg",
+			"width": 364,
+			"height": 626,
+			"left": true
+		},
+		{
+			"image": "Vie_685x626px_14.jpg",
+			"width": 684,
+			"height": 626,
+			"right": true
+		}
+	]
+}

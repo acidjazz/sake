@@ -14,3 +14,5 @@ dist
 # vim and osx
 .DS_Store
 *.swp
+
+.idea

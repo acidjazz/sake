@@ -1,0 +1,87 @@
+{
+	"folder": "fjordlife",
+	"title": "fjordlife",
+	"description": [
+		"A sustainable womenswear brand out to clean up the fashion and beauty industry.",
+		"The brand's identity and e-commerce site reflect the organic landscape of nordic fjords through a natural color palette and minimal layout. Modern and geometric typography provide a clean landscape for pops of imagery, transport shoppers behind the seams to meet the people and places who are making a difference. <a href=\"https://www.fjordlife.ca/\">www.fjordlife.ca</a>"
+	],
+	"services": [
+		"Strategy",
+		"Brand Identity",
+		"Print",
+		"Website Design + Development"
+	],
+	"prev": {
+		"name": "vie healing",
+		"folder": "vie"
+	},
+	"next": {
+		"name": "benefit cosmetics ",
+		"folder": "benefitcosmetics"
+	},
+	"tiles": [
+		{
+			"image": "Fjordlife_1079x675px_1.jpg",
+			"full": true,
+			"width": 1079,
+			"height": 675
+		},
+		{
+			"image": "Fjordlife_589x600px_4.jpg",
+			"right": true,
+			"width": 589,
+			"height": 600
+		},
+		{
+			"image": "Fjordlife_456x284px_2.jpg",
+			"left": true,
+			"width": 456,
+			"height": 284
+		},
+		{
+			"image": "Fjordlife_456x284px_3.jpg",
+			"width": 456,
+			"height": 284
+		},
+		{
+			"image": "Fjordlife_1079x536px_5.jpg",
+			"width": 1079,
+			"height": 536,
+			"full": true
+		},
+		{
+			"image": "Fjordlife_587x918px_8.jpg",
+			"width": 587,
+			"height": 918,
+			"right": true
+		},
+		{
+			"image": "Fjordlife_456x642px_6.jpg",
+			"width": 456,
+			"height": 642,
+			"left": true
+		},
+		{
+			"image": "Fjordlife_456x243px_7.jpg",
+			"width": 456,
+			"height": 243
+		},
+		{
+			"image": "Fjordlife_1079x2031px_9.jpg",
+			"width": 1079,
+			"height": 2031,
+			"full": true
+		},
+		{
+			"image": "Fjordlife_589x600px_10.jpg",
+			"width": 589,
+			"height": 600,
+			"left": true
+		},
+		{
+			"image": "Fjordlife_456x599px_11.jpg",
+			"width": 456,
+			"height": 599
+		}
+	]
+}

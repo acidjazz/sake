@@ -13,7 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@fellow/eslint-plugin-coffee": "^0.4.12",
+    "coffee-loader": "^0.9.0",
+    "coffee-script": "^1.12.7",
+    "coffeescript": "^2.2.2",
     "nuxt": "^1.0.0",
+    "nuxt-coffee": "^0.1.1",
     "pug": "^2.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"

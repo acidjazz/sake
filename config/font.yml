@@ -1,0 +1,52 @@
+---
+h1:
+  font-family: engravers regular
+  font-size: 40px
+
+h2:
+  font-family: chronicle roman
+  letter-spacing: 3px
+  font-size: 20px
+
+h3:
+  font-family: chronicle roman
+  letter-spacing: 2px
+  font-size: 15px
+
+h4:
+  font-family: revista stencilregular
+  font-size: 40px
+  letter-spacing: 2px
+
+h5:
+  font-family: chronicle roman
+  letter-spacing: 3px
+  font-size: 20px
+  line-height: 32px
+
+copy1:
+  font-family: chronicle roman
+  font-size: 16px
+
+copy2:
+  font-family: chronicle roman
+  font-size: 12px
+  letter-spacing: 2px
+
+copy2s:
+  font-family: chronicle roman
+  font-size: 8px
+  letter-spacing: 2px
+
+copy3:
+  font-family: engravers regular
+  font-size: 11px
+  letter-spacing: 2px
+  line-height: 19px
+
+copy4:
+  font-family: engravers regular
+  font-size: 10px
+  letter-spacing: 2px
+  line-height: 12px
+

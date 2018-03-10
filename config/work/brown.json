@@ -1,0 +1,127 @@
+{
+	"folder": "brown",
+	"title": "brown estate",
+	"description": [
+		"nestled in the eastern hills of napa valley, the brown family continues to produce charismatic wines, the unconventional way.",
+		"when asked to revive the brand’s existing identity, we designed several concepts that spotlight the meaningful stories behind the estate and its symbiotic relationship to mother nature. sun-drenched imagery defines a rich sense of place, mysterious illustrations depict jamaican folklore, and classic typography spells out quotes that unveil a true sense of character."
+	],
+	"services": [
+		"strategy",
+		"brand identity concepts",
+		"print concepts",
+		"art direction"
+	],
+	"prev": {
+		"name": "sumi",
+		"folder": "sumi"
+	},
+	"next": {
+		"name": "vie healing",
+		"folder": "vie"
+	},
+	"tiles": [
+		{
+			"image": "Brown_1080x720px_1.jpg",
+			"width": 1080,
+			"height": 720,
+			"full": true
+		},
+		{
+			"image": "Brown_520x765px_4.jpg",
+			"width": 527,
+			"height": 765,
+			"right": true
+		},
+		{
+			"image": "Brown_520x365px_2.jpg",
+			"left": true,
+			"width": 520,
+			"height": 365
+		},
+		{
+			"image": "Brown_520x365px_3.jpg",
+			"width": 520,
+			"height": 365,
+			"left": true
+		},
+		{
+			"image": "Brown_422x625px_5.jpg",
+			"width": 422,
+			"height": 625,
+			"left": true
+		},
+		{
+			"image": "Brown_625x625px_6.jpg",
+			"right": true,
+			"width": 625,
+			"height": 625
+		},
+		{
+			"image": "Brown_1079x630px_7.jpg",
+			"width": 1079,
+			"height": 630,
+			"full": true
+		},
+		{
+			"image": "Brown_520x760px_8.jpg",
+			"width": 520,
+			"height": 760,
+			"left": true
+		},
+		{
+			"image": "Brown_520x370px_9.jpg",
+			"width": 520,
+			"height": 370,
+			"right": true
+		},
+		{
+			"image": "Brown_520x360px_10.jpg",
+			"width": 520,
+			"height": 360,
+			"right": true
+		},
+		{
+			"image": "Brown_1079x560px_11.jpg",
+			"width": 1079,
+			"height": 560,
+			"full": true
+		},
+		{
+			"image": "Brown_520x760_12.jpg",
+			"width": 520,
+			"height": 760,
+			"left": true
+		},
+		{
+			"image": "Brown_520x325px_13.jpg",
+			"width": 520,
+			"height": 325,
+			"right": true
+		},
+		{
+			"image": "Brown_520x400px_14.jpg",
+			"width": 520,
+			"height": 400,
+			"right": true,
+			"stack": true
+		},
+		{
+			"image": "Brown_1079x625px_15.jpg",
+			"width": 1079,
+			"height": 625,
+			"full": true
+		},
+		{
+			"image": "Brown_700x510px_16.jpg",
+			"width": 700,
+			"height": 510,
+			"lefT": true
+		},
+		{
+			"image": "Brown_348x510px_17.jpg",
+			"width": 348,
+			"height": 510,
+			"right": true
+		}
+	]
+}

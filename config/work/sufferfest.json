@@ -1,0 +1,98 @@
+{
+	"folder": "sufferfest",
+	"title": "sufferfest",
+	"description": [
+		"Sufferfest Beer Company was born out of a need to provide a gluten-removed beer that doesn’t compromise on taste or quality.",
+		"We partnered with Sufferfest to design a beer that celebrates the company’s mantra: “medals for a job well done.” The victorious fist icon communicates the brand’s ability to overcome the challenges of using barley in a gluten-free beer. Crisp white cans featuring a line of distinguished color ribbons and bold typography create a winning combination."
+	],
+	"services": [
+		"brand identity",
+		"strategy",
+		"packaging",
+		"print"
+	],
+	"prev": {
+		"name": "El Destilado",
+		"folder": "eldestilado"
+	},
+	"next": {
+		"name": "sumi",
+		"folder": "sumi"
+	},
+	"tiles": [
+		{
+			"image": "Sufferfest_1075x615px_1.gif",
+			"width": 1075,
+			"height": 615,
+			"full": true
+		},
+		{
+			"image": "Sufferfest_1075x465px_2.jpg",
+			"width": 1075,
+			"height": 465,
+			"full": true
+		},
+		{
+			"image": "Sufferfest_339x530px_3.jpg",
+			"width": 339,
+			"height": 530,
+			"left": true
+		},
+		{
+			"image": "Sufferfest_339x530px_4.jpg",
+			"width": 339,
+			"height": 530,
+			"left": true
+		},
+		{
+			"image": "Sufferfest_339x530px_5.jpg",
+			"width": 339,
+			"height": 530,
+			"right": true
+		},
+		{
+			"image": "Sufferfest_520x375px_6.jpg",
+			"clear": true,
+			"width": 520,
+			"height": 375,
+			"left": true
+		},
+		{
+			"image": "Sufferfest_520x375px_7.jpg",
+			"width": 520,
+			"height": 375,
+			"right": true
+		},
+		{
+			"image": "Sufferfest_365x487px_8.jpg",
+			"width": 365,
+			"height": 487,
+			"left": true
+		},
+		{
+			"image": "Sufferfest_675x487px_9.jpg",
+			"width": 675,
+			"height": 487,
+			"right": true
+		},
+		{
+			"image": "Sufferfest_339x334px_10.jpg",
+			"width": 339,
+			"height": 334,
+			"left": true,
+			"clear": true
+		},
+		{
+			"image": "Sufferfest_339x334px_11.jpg",
+			"width": 339,
+			"height": 334,
+			"left": true
+		},
+		{
+			"image": "Sufferfest_339x334px_12.jpg",
+			"width": 339,
+			"height": 334,
+			"right": true
+		}
+	]
+}

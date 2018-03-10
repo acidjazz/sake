@@ -4,47 +4,47 @@
     .title .Forging a unique path with clarity and character.
     .tiles
 
-      a(href='/work/fullsun').tile.tile_fullsun.tile_left
+      router-link(to='/work/fullsun').tile.tile_fullsun.tile_left
         .image.off
         .hover
           .title .full sun.
 
-      a(href='/work/eldestilado').tile.tile_eldestilado
+      router-link(to='/work/eldestilado').tile.tile_eldestilado
         .image.off
         .hover
           .title .el destilado.
 
-      a(href='/work/sufferfest').tile.tile_sufferfest.tile_full
+      router-link(to='/work/sufferfest').tile.tile_sufferfest.tile_full
         .image.off
         .hover
           .title .sufferfest.
 
-      //a(href='/work/sumi').tile.tile_sumi
+      //router-link(to='/work/sumi').tile.tile_sumi
         .image.off
         .hover
           .title .sumi.
 
-      a(href='/work/brown').tile.tile_brownestate.tile_full
+      router-link(to='/work/brown').tile.tile_brownestate.tile_full
         .image.off
         .hover
           .title .brown estate.
 
-      a(href='/work/vie').tile.tile_viehealing.tile_left
+      router-link(to='/work/vie').tile.tile_viehealing.tile_left
         .image.off
         .hover
           .title .vie healing.
 
-      a(href='/work/fjordlife').tile.tile_fjordlife
+      router-link(to='/work/fjordlife').tile.tile_fjordlife
         .image.off
         .hover
           .title .fjordlife.
 
-      a(href='/work/benefitcosmetics').tile.tile_benefit.tile_left
+      router-link(to='/work/benefitcosmetics').tile.tile_benefit.tile_left
         .image.off
         .hover
           .title .benefit cosmetics.
 
-      a(href='/work/urbankitchen').tile.tile_urbankitchen
+      router-link(to='/work/urbankitchen').tile.tile_urbankitchen
         .image.off
         .hover
           .title .urban kitchen.
@@ -67,7 +67,7 @@ export default {
       overflow hidden
       background-size cover
       > .image
-        background-color rgba(blue1, 0.5)
+        background-color rgbrouter-link(blue1, 0.5)
         background-size contain
         width inherit
         height inherit
@@ -77,14 +77,14 @@ export default {
         position absolute
         top 0
         left 0
-        background-color rgba(blue1, 0.5)
+        background-color rgbrouter-link(blue1, 0.5)
         width 100%
         height 100%
         opacity 0
         transition opacity 0.2s linear
         > .title
-          position absolute
           font-h2()
+          position absolute
           top 50%
           opacity 0
           width 100%
