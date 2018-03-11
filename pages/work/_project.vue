@@ -31,10 +31,6 @@ export default
   computed:
     work: ->
       data = require "../../config/work/#{this.$route.params.project}.json"
-      return data
-
-  created: ->
-    console.log this.work
 </script>
 
 <style lang="stylus">
@@ -74,9 +70,9 @@ export default
     padding 40px 0 0 0
 
   > .sidebar
-    width 120px
+    width 120px !important
     float right
-    min-height auto
+    min-height auto !important
     margin 30px 0 30px 30px
     color blue1
     &.sidebar_mobile

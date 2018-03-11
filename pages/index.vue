@@ -1,60 +1,45 @@
 <template lang="pug">
   .page.home
-
     .title .Forging a unique path with clarity and character.
     .tiles
-
       router-link(to='/work/fullsun').tile.tile_fullsun.tile_left
-        .image.off
+        .image.on
         .hover
           .title .full sun.
-
       router-link(to='/work/eldestilado').tile.tile_eldestilado
-        .image.off
+        .image.on
         .hover
           .title .el destilado.
-
       router-link(to='/work/sufferfest').tile.tile_sufferfest.tile_full
-        .image.off
+        .image.on
         .hover
           .title .sufferfest.
-
       //router-link(to='/work/sumi').tile.tile_sumi
-        .image.off
+        .image.on
         .hover
           .title .sumi.
-
       router-link(to='/work/brown').tile.tile_brownestate.tile_full
-        .image.off
+        .image.on
         .hover
           .title .brown estate.
-
       router-link(to='/work/vie').tile.tile_viehealing.tile_left
-        .image.off
+        .image.on
         .hover
           .title .vie healing.
-
       router-link(to='/work/fjordlife').tile.tile_fjordlife
-        .image.off
+        .image.on
         .hover
           .title .fjordlife.
-
       router-link(to='/work/benefitcosmetics').tile.tile_benefit.tile_left
-        .image.off
+        .image.on
         .hover
           .title .benefit cosmetics.
-
       router-link(to='/work/urbankitchen').tile.tile_urbankitchen
-        .image.off
+        .image.on
         .hover
           .title .urban kitchen.
       .clear
 </template>
-
-<script>
-export default {
-}
-</script>
 
 <style lang="stylus">
 @import '../assets/stylus/guide/includes/*'
