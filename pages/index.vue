@@ -1,6 +1,6 @@
 <template lang="pug">
   .page.home
-    .title .Forging a unique path with clarity and character.
+    .clear
     .tiles
       router-link(to='/work/fullsun').tile.tile_fullsun.tile_left
         .image.on

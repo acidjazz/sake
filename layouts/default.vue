@@ -1,5 +1,7 @@
 <template lang="pug">
   .container
+    router-link#d(to="/")
+      include ../static/vector/d.svg
     NavBar
     .inner
       nuxt

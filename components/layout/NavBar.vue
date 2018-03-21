@@ -1,20 +1,11 @@
 <template lang="pug">
 header
-  a.logo(href="/")
-    include ../../static/vector/logo1.svg
-  .contact
-    .title DESIGNSAKE STUDIO
-    a.address(href="'https://goo.gl/maps/SV3rxDiZoF22",target="_new")
-      .line 295 KANSAS STREET
-      .line SAN FRANCISCO CA
-      .line 94103 
-    a.email(:href="`mailto:${social.mail}`")
-      include ../../static/vector/email.svg
-
+  a.logo(href="/") .designsake studio.
   .menu
     a.item.on(href='/') .work.
     a.item(href='/studio') .studio.
     a.item(href='/contact') .contact.
+    a.item(href='/journal') .journal.
 
   .socials
     a.social.instagram(:href="social.instagram",target='_new')
@@ -27,6 +18,20 @@ header
       include ../../static/vector/behance.svg
 
   .clear
+
+  .summary Designsake Studio is a multidisciplinary agency specializing in branding and packaging design. We help build intentional brands using strategies and solutions to transform big ideas into stand out design.
+
+  .contact
+    .title DESIGNSAKE STUDIO
+    a.address(href="'https://goo.gl/maps/SV3rxDiZoF22",target="_new")
+      .line 295 KANSAS STREET
+      .line SAN FRANCISCO CA
+      .line 94103 
+    a.email(:href="`mailto:${social.mail}`")
+      include ../../static/vector/email.svg
+
+  .clear
+
 </template>
 
 <script>
@@ -51,8 +56,22 @@ export default {
 
 <style lang="stylus">
 @import '../../assets/stylus/guide/includes/*'
+
+.socials
+  > a.social
+    display block
+    width 20px
+    height 20px
+    padding  10px 5px 10px 5px
+    > svg > path, > svg > rect
+      fill grey1
+      transition fill 0.1s linear 0s
+    &:hover > svg > path, > svg > rect
+      fill blue1
+
 .contact
   float right
+  margin -200px 0 60px 0
   font-copy2s()
   > .title, > .address > .line, > .email
     margin 0 0 5px 0
@@ -73,35 +92,36 @@ export default {
       fill grey1
       transition fill 0.1s linear
 
-.socials
-  > a.social
-    display block
-    width 20px
-    height 20px
-    padding  10px 5px 10px 5px
-    > svg > path, > svg > rect
-      fill grey1
-      transition fill 0.1s linear 0s
-    &:hover > svg > path, > svg > rect
-      fill blue1
+#d
+  width 60px
+  height 60px
+  position fixed
+  left 50%
+  margin-left -50px
+  z-index 100
+  > svg > path
+    fill trout
 
 header
+  position relevant
+  height 100px
+
   > .socials
     position fixed
     top 155px
-  position relevant
   > .logo
+    font-copy3() 
     float left
-    width 202px
-    height 46px
     margin 0 0 0 84px
-    > svg > path
-      fill blue1
+
+  .summary
+    font-h5()
+    width 640px
+    margin 100px 0 60px 100px
+    height 200px
 
   .menu
-    width 270px
     float right
-    margin 0 20px 0 0
     font-copy3() 
     > a.item
       text-decoration none

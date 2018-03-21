@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@fellow/eslint-plugin-coffee": "^0.4.12",
+    "aeonian": "^1.0.9",
     "coffee-loader": "^0.9.0",
     "coffee-script": "^1.12.7",
     "coffeescript": "^2.2.2",
